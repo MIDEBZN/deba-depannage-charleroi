@@ -65,6 +65,21 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Trust Badges (Brands & Certs) -->
+  <section class="trust-brands bg-white" style="padding: 40px 0; border-bottom: 1px solid #eaeaea;">
+    <div class="container text-center">
+      <p class="text-muted text-sm font-bold uppercase tracking-wider mb-6">Installateur Agréé & Marques Partenaires</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 opacity-70" style="opacity: 0.6;">
+        <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">CERGA</span>
+        <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">Vaillant</span>
+        <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">Bulex</span>
+        <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">Viessmann</span>
+        <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">Grohe</span>
+        <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">Geberit</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Services Preview -->
   <section class="section services-preview bg-accent">
     <div class="container">
@@ -135,16 +150,16 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Stats Counter -->
+  <!-- Stats Counter & Response Time -->
   <section class="section stats bg-primary text-light">
     <div class="container grid stats-grid text-center">
       <div>
-        <h2 class="text-white text-5xl">2k+</h2>
-        <p class="text-accent mt-2">Interventions</p>
+        <h2 class="text-white text-5xl">30m</h2>
+        <p class="text-accent mt-2">Temps de Réponse</p>
       </div>
       <div>
         <h2 class="text-white text-5xl">11k+</h2>
-        <p class="text-accent mt-2">Clients Heureux</p>
+        <p class="text-accent mt-2">Interventions</p>
       </div>
       <div>
         <h2 class="text-white text-5xl">15+</h2>
@@ -152,16 +167,33 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div>
         <h2 class="text-white text-5xl">100%</h2>
-        <p class="text-accent mt-2">Garantie</p>
+        <p class="text-accent mt-2">Clients Satisfaits</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="section testimonials">
+  <!-- Testimonials & Review Badges -->
+  <section class="section testimonials bg-light">
     <div class="container text-center">
-      <span class="text-primary font-bold uppercase text-sm">Témoignages</span>
-      <h2 class="mb-12">Ce que disent nos clients</h2>
+      <span class="text-primary font-bold uppercase text-sm">Témoignages & Avis</span>
+      <h2>Ce que disent nos clients</h2>
+      
+      <div class="review-badges flex justify-center items-center gap-6 mt-6 mb-12 flex-wrap">
+        <div class="badge-box bg-white p-4 rounded shadow-sm flex items-center gap-3" style="background: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
+          <div class="text-3xl font-bold" style="color: #4285F4; font-size: 2rem;">G</div>
+          <div class="text-left" style="text-align: left;">
+            <div class="stars text-primary text-sm" style="font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+            <div class="font-bold text-secondary" style="font-weight: bold;">4.9/5 Avis Google</div>
+          </div>
+        </div>
+        <div class="badge-box bg-white p-4 rounded shadow-sm flex items-center gap-3" style="background: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
+          <div class="text-3xl text-green-500 font-bold" style="color: #00b67a; font-size: 2rem;">★</div>
+          <div class="text-left" style="text-align: left;">
+            <div class="stars text-primary text-sm" style="font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+            <div class="font-bold text-secondary" style="font-weight: bold;">Excellent Trustpilot</div>
+          </div>
+        </div>
+      </div>
       <div class="grid testimonial-grid">
         <div class="card testimonial-card">
           <div class="stars text-primary mb-4">⭐⭐⭐⭐⭐</div>
@@ -181,6 +213,28 @@ import Layout from '../layouts/Layout.astro';
           <h4>Antoine R.</h4>
           <span class="text-sm">Jumet</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Map -->
+  <section class="section map-section">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="text-primary font-bold uppercase text-sm">Proximité & Intervention</span>
+        <h2>Notre Zone de Couverture</h2>
+        <p class="text-muted mt-4 max-w-2xl mx-auto" style="max-width: 800px; margin: 1rem auto 0;">Nous intervenons rapidement sur tout le Grand Charleroi et sa périphérie. Grâce à notre position stratégique, nos techniciens sont sur place en moyenne en 30 minutes lors d'une urgence.</p>
+      </div>
+      <div class="map-container" style="border-radius: var(--border-radius); overflow: hidden; height: 400px; box-shadow: var(--box-shadow); border: 2px solid var(--accent);">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81248.51468603504!2d4.364379361664156!3d50.42858167886477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c225e3612f00f5%3A0x40099ab2f4d5460!2sCharleroi!5e0!3m2!1sfr!2sbe!4v1700000000000!5m2!1sfr!2sbe" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </section>
