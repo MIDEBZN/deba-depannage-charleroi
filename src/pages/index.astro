@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import heroImg from '../assets/images/hero.png';
+import serviceImg from '../assets/images/service.png';
+import teamImg from '../assets/images/team.png';
 ---
 
 <Layout title="Plombier Charleroi | Urgence & Dépannage 24/7">
@@ -18,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="hero-image">
         <div class="image-wrapper">
-          <img src="/images/hero.png" alt="Plombier professionnel à Charleroi" />
+          <Image src={heroImg} alt="Plombier professionnel à Charleroi" loading="eager" />
           <div class="stats-float card">
             <div class="flex items-center gap-4">
               <div class="stats-icon text-primary text-2xl">👨‍🔧</div>
@@ -92,7 +96,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="grid service-grid">
         <div class="service-card">
-          <img src="/images/service.png" alt="Réparation Plomberie" />
+          <Image src={serviceImg} alt="Réparation Plomberie" />
           <div class="service-content">
             <h3>Dépannage Plomberie</h3>
             <p>Réparation de fuites, remplacement de robinetterie et installation sanitaire complète.</p>
@@ -100,7 +104,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div class="service-card">
-          <img src="/images/hero.png" alt="Débouchage" />
+          <Image src={heroImg} alt="Débouchage" />
           <div class="service-content">
             <h3>Débouchage Canalisation</h3>
             <p>Curage haute pression pour vos éviers, toilettes et égouts bouchés.</p>
@@ -108,7 +112,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div class="service-card">
-          <img src="/images/service.png" alt="Chauffage" />
+          <Image src={serviceImg} alt="Chauffage" />
           <div class="service-content">
             <h3>Entretien Chauffage</h3>
             <p>Entretien et réparation de chaudières toutes marques pour votre confort.</p>
@@ -127,21 +131,21 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid team-grid">
         <div class="team-member">
           <div class="team-img-wrapper">
-            <img src="/images/team.png" alt="Membre équipe" />
+            <Image src={teamImg} alt="Membre équipe" />
           </div>
           <h4 class="mt-4">Thomas D.</h4>
           <p>Plombier Expert</p>
         </div>
         <div class="team-member">
           <div class="team-img-wrapper">
-            <img src="/images/team.png" alt="Membre équipe" />
+            <Image src={teamImg} alt="Membre équipe" />
           </div>
           <h4 class="mt-4">Marc L.</h4>
           <p>Chauffagiste Agréé</p>
         </div>
         <div class="team-member">
           <div class="team-img-wrapper">
-            <img src="/images/team.png" alt="Membre équipe" />
+            <Image src={teamImg} alt="Membre équipe" />
           </div>
           <h4 class="mt-4">Julien S.</h4>
           <p>Spécialiste Débouchage</p>

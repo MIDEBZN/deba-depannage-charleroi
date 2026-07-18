@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import serviceImg from '../assets/images/service.png';
 ---
 
 <Layout title="À Propos | Dépannage Plombier Charleroi">
@@ -13,7 +15,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="section">
     <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
       <div>
-        <img src="/images/service.png" alt="Plombier au travail" style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);" />
+        <Image src={serviceImg} alt="Plombier au travail" style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);" />
       </div>
       <div>
         <span class="text-primary font-bold uppercase text-sm">Notre Histoire</span>
