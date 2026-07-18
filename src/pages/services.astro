@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Nos Services | Plomberie, Chauffage & Débouchage Charleroi">
+  <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
+    <div class="container">
+      <h1 class="text-white">Nos Services</h1>
+      <p class="text-accent mt-4">Une expertise complète pour tous vos problèmes sanitaires et de chauffage.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid gap-8" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="card">
+          <div class="icon-wrapper">💧</div>
+          <h2>Dépannage Plomberie</h2>
+          <p class="mt-4">Intervention rapide pour toutes vos fuites d'eau, réparations de tuyauterie, et remplacement de robinetterie. Nous diagnostiquons et réparons avec précision.</p>
+          <ul class="mt-4 text-muted">
+            <li>✓ Recherche de fuite</li>
+            <li>✓ Remplacement WC</li>
+            <li>✓ Réparation boiler</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-wrapper">🚽</div>
+          <h2>Débouchage</h2>
+          <p class="mt-4">Éviers, toilettes ou canalisations principales bouchées ? Nous utilisons un équipement de curage haute pression pour résoudre le problème définitivement.</p>
+          <ul class="mt-4 text-muted">
+            <li>✓ Débouchage égout</li>
+            <li>✓ Inspection caméra</li>
+            <li>✓ Curage haute pression</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-wrapper">🔥</div>
+          <h2>Chauffage</h2>
+          <p class="mt-4">Entretien annuel, dépannage en urgence ou installation de nouvelles chaudières. Nos chauffagistes sont agréés toutes marques.</p>
+          <ul class="mt-4 text-muted">
+            <li>✓ Entretien chaudière</li>
+            <li>✓ Dépannage radiateur</li>
+            <li>✓ Installation chauffage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .text-white { color: white; }
+  .text-accent { color: var(--accent); }
+  .mt-4 { margin-top: 1rem; }
+  .text-muted { color: var(--text-muted); line-height: 1.8; }
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+</style>

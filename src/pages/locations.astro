@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Zones d'Intervention | Plombier Charleroi & Alentours">
+  <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
+    <div class="container">
+      <h1 class="text-white">Zones d'Intervention</h1>
+      <p class="text-accent mt-4">Nous couvrons l'ensemble du Grand Charleroi avec une intervention rapide.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2>Partout à Charleroi</h2>
+      <p class="mt-4 max-w-2xl mx-auto">Notre équipe est stratégiquement basée pour pouvoir intervenir chez vous en moins de 30 minutes, 24h/24 et 7j/7.</p>
+      
+      <div class="grid gap-4 mt-12" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="card">📍 Charleroi Centre</div>
+        <div class="card">📍 Gosselies</div>
+        <div class="card">📍 Jumet</div>
+        <div class="card">📍 Gilly</div>
+        <div class="card">📍 Marcinelle</div>
+        <div class="card">📍 Couillet</div>
+        <div class="card">📍 Marchienne-au-Pont</div>
+        <div class="card">📍 Mont-sur-Marchienne</div>
+        <div class="card">📍 Ransart</div>
+        <div class="card">📍 Courcelles</div>
+        <div class="card">📍 Fleurus</div>
+        <div class="card">📍 Châtelet</div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .text-white { color: white; }
+  .text-accent { color: var(--accent); }
+  .mt-4 { margin-top: 1rem; }
+  .mt-12 { margin-top: 3rem; }
+  .max-w-2xl { max-width: 800px; margin-left: auto; margin-right: auto; }
+</style>

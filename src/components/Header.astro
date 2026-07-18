@@ -1,0 +1,118 @@
+---
+---
+
+<header class="header">
+  <div class="top-bar">
+    <div class="container flex justify-between items-center">
+      <div class="contact-info">
+        <span>📧 info@debadepannage.be</span>
+        <span>📍 Charleroi, Belgique</span>
+      </div>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="main-header">
+    <div class="container flex justify-between items-center">
+      <a href="/" class="logo">
+        <div class="logo-icon">💧</div>
+        <div class="logo-text">
+          <span class="brand-name">Deba</span>
+          <span class="tagline">Plombier Charleroi</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links">
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/locations">Zones d'Intervention</a></li>
+          <li><a href="/about">À Propos</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-cta">
+        <a href="tel:0479123456" class="btn btn-primary call-btn">
+          <span class="icon">📞</span>
+          0479 12 34 56
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    background: var(--bg-white);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .top-bar {
+    background: var(--secondary);
+    color: var(--text-light);
+    padding: 8px 0;
+    font-size: 0.9rem;
+  }
+  
+  .contact-info span {
+    margin-right: 20px;
+  }
+  
+  .main-header {
+    padding: 15px 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-icon {
+    font-size: 2.5rem;
+  }
+  
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary);
+    line-height: 1;
+  }
+  
+  .tagline {
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    font-weight: 600;
+    color: var(--secondary);
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+  
+  .call-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+</style>

@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="À Propos | Deba Dépannage Plombier Charleroi">
+  <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
+    <div class="container">
+      <h1 class="text-white">À Propos de Nous</h1>
+      <p class="text-accent mt-4">Votre partenaire de confiance en plomberie depuis plus de 15 ans à Charleroi.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+      <div>
+        <img src="/images/service.png" alt="Plombier au travail" style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);" />
+      </div>
+      <div>
+        <span class="text-primary font-bold uppercase text-sm">Notre Histoire</span>
+        <h2 class="mt-4">Plus de 15 ans d'expérience au service des Carolos</h2>
+        <p class="mt-4 text-muted">Fondée à Charleroi, Deba Dépannage est une entreprise familiale qui s'est donnée pour mission de fournir des services de plomberie de la plus haute qualité. Nous comprenons qu'une urgence plomberie est stressante, c'est pourquoi nous mettons l'accent sur la rapidité, la transparence des prix et un service client irréprochable.</p>
+        <p class="mt-4 text-muted">Notre équipe de techniciens est certifiée et suit régulièrement des formations pour maîtriser les dernières technologies en matière de chauffage et de sanitaires.</p>
+        <div class="mt-8 flex gap-4">
+          <a href="/contact" class="btn btn-primary">Contactez-nous</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .text-white { color: white; }
+  .text-accent { color: var(--accent); }
+  .mt-4 { margin-top: 1rem; }
+  .mt-8 { margin-top: 2rem; }
+  .text-muted { color: var(--text-muted); line-height: 1.8; }
+  
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr !important; }
+  }
+</style>

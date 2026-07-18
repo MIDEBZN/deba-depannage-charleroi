@@ -1,0 +1,115 @@
+---
+---
+
+<footer class="footer">
+  <div class="container grid footer-grid">
+    <div class="footer-col brand-col">
+      <div class="logo">
+        <div class="logo-text">
+          <span class="brand-name text-light">Deba</span>
+          <span class="tagline">Plombier Charleroi</span>
+        </div>
+      </div>
+      <p class="mt-4">Votre expert local en plomberie, chauffage et débouchage à Charleroi. Intervention rapide et travail garanti par nos professionnels agréés.</p>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Liens Rapides</h3>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/locations">Zones</a></li>
+        <li><a href="/about">À Propos</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="/services">Dépannage Plomberie</a></li>
+        <li><a href="/services">Débouchage Canalisation</a></li>
+        <li><a href="/services">Entretien Chauffage</a></li>
+        <li><a href="/services">Recherche de Fuite</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul class="contact-list">
+        <li>📍 Charleroi, Belgique</li>
+        <li>📞 0479 12 34 56</li>
+        <li>✉️ info@debadepannage.be</li>
+        <li>🕒 24/7 Urgences</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <p>&copy; {new Date().getFullYear()} Deba Dépannage Plombier Charleroi. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--secondary);
+    color: var(--accent);
+    padding-top: 80px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .footer h3 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .footer ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer a {
+    color: var(--accent);
+  }
+  
+  .footer a:hover {
+    color: var(--primary);
+  }
+  
+  .text-light {
+    color: var(--text-light);
+  }
+  
+  .brand-name {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  
+  .tagline {
+    color: var(--primary);
+    font-weight: 600;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .footer-bottom {
+    background: #0a2548;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
