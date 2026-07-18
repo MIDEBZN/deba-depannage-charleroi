@@ -1,0 +1,93 @@
+---
+---
+<section class="trust-bar bg-light">
+  <div class="container">
+    <div class="trust-grid">
+      
+      <div class="trust-item">
+        <div class="trust-icon">⏱️</div>
+        <div class="trust-content">
+          <h4>Intervention en 30 min</h4>
+          <p>Service d'urgence disponible 24/7 sur le Grand Charleroi.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">🏆</div>
+        <div class="trust-content">
+          <h4>15+ Ans d'Expérience</h4>
+          <p>Savoir-faire reconnu et expertise transmise de père en fils.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">📜</div>
+        <div class="trust-content">
+          <h4>Toutes Certifications</h4>
+          <p>Agréations officielles: CERGA, Technicien G1, L, et Cédicol.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-content">
+          <h4>100% Garanti & Assuré</h4>
+          <p>Couverture RC Pro et garantie décennale. Agréé toutes assurances.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .trust-bar {
+    background-color: var(--bg-light, #f8f9fa);
+    padding: 40px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .trust-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .trust-icon {
+    font-size: 32px;
+    line-height: 1;
+    color: var(--primary);
+  }
+  
+  .trust-content h4 {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    color: var(--secondary);
+  }
+  
+  .trust-content p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .trust-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .trust-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
