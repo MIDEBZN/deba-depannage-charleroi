@@ -2,8 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import heroImg from '../assets/images/hero.png';
-import serviceImg from '../assets/images/service.png';
 import teamImg from '../assets/images/team.png';
+import plumbingImg from '../assets/images/service_plumbing.png';
+import unblockingImg from '../assets/images/service_unblocking.png';
+import heatingImg from '../assets/images/service_heating.png';
 ---
 
 <Layout title="Plombier Charleroi | Urgence & Dépannage 24/7">
@@ -96,7 +98,7 @@ import teamImg from '../assets/images/team.png';
       </div>
       <div class="grid service-grid">
         <div class="service-card">
-          <Image src={serviceImg} alt="Réparation Plomberie" />
+          <Image src={plumbingImg} alt="Réparation Plomberie" />
           <div class="service-content">
             <h3>Dépannage Plomberie</h3>
             <p>Réparation de fuites, remplacement de robinetterie et installation sanitaire complète.</p>
@@ -104,7 +106,7 @@ import teamImg from '../assets/images/team.png';
           </div>
         </div>
         <div class="service-card">
-          <Image src={heroImg} alt="Débouchage" />
+          <Image src={unblockingImg} alt="Débouchage" />
           <div class="service-content">
             <h3>Débouchage Canalisation</h3>
             <p>Curage haute pression pour vos éviers, toilettes et égouts bouchés.</p>
@@ -112,7 +114,7 @@ import teamImg from '../assets/images/team.png';
           </div>
         </div>
         <div class="service-card">
-          <Image src={serviceImg} alt="Chauffage" />
+          <Image src={heatingImg} alt="Chauffage" />
           <div class="service-content">
             <h3>Entretien Chauffage</h3>
             <p>Entretien et réparation de chaudières toutes marques pour votre confort.</p>
