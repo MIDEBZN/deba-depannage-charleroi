@@ -1,14 +1,13 @@
 ---
+import { Image } from 'astro:assets';
+import logoImg from '../assets/images/logo.png';
 ---
 
 <footer class="footer">
   <div class="container grid footer-grid">
     <div class="footer-col brand-col">
-      <div class="logo">
-        <div class="logo-text">
-          <span class="brand-name text-light">Dépannage</span>
-          <span class="tagline">Plombier Charleroi</span>
-        </div>
+      <div class="logo bg-white p-2" style="background: white; padding: 10px; border-radius: 8px; display: inline-block;">
+        <Image src={logoImg} alt="Dépannage Plombier Charleroi Logo" width={250} height={80} style="height: 60px; width: auto; object-fit: contain;" />
       </div>
       <p class="mt-4">Votre expert local en plomberie, chauffage et débouchage à Charleroi. Intervention rapide et travail garanti par nos professionnels agréés.</p>
     </div>

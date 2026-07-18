@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import logoImg from '../assets/images/logo.png';
 ---
 
 <header class="header">
@@ -15,12 +17,8 @@
   </div>
   <div class="main-header">
     <div class="container flex justify-between items-center">
-      <a href="/" class="logo">
-        <div class="logo-icon">💧</div>
-        <div class="logo-text">
-          <span class="brand-name">Dépannage</span>
-          <span class="tagline">Plombier Charleroi</span>
-        </div>
+      <a href="/" class="logo" style="text-decoration: none;">
+        <Image src={logoImg} alt="Dépannage Plombier Charleroi Logo" width={250} height={80} style="height: 70px; width: auto; object-fit: contain;" />
       </a>
       
       <nav class="nav-links">
