@@ -2,32 +2,83 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Zones d'Intervention | Plombier Charleroi & Alentours">
+<Layout title="Zones d'Intervention | Dépannage Plombier Charleroi">
   <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
     <div class="container">
-      <h1 class="text-white">Zones d'Intervention</h1>
-      <p class="text-accent mt-4">Nous couvrons l'ensemble du Grand Charleroi avec une intervention rapide.</p>
+      <h1 class="text-white">Nos Zones d'Intervention</h1>
+      <p class="text-accent mt-4 max-w-2xl mx-auto">Basés à Charleroi, nous couvrons l'ensemble du Grand Charleroi et des communes périphériques pour vous garantir des interventions rapides (30-45 minutes) en cas d'urgence.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container text-center">
-      <h2>Partout à Charleroi</h2>
-      <p class="mt-4 max-w-2xl mx-auto">Notre équipe est stratégiquement basée pour pouvoir intervenir chez vous en moins de 30 minutes, 24h/24 et 7j/7.</p>
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2>Communes Desservies</h2>
+        <p class="text-muted mt-2">Cliquez sur votre commune pour découvrir nos services locaux détaillés.</p>
+      </div>
       
-      <div class="grid gap-4 mt-12" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-        <div class="card">📍 Charleroi Centre</div>
-        <div class="card">📍 Gosselies</div>
-        <div class="card">📍 Jumet</div>
-        <div class="card">📍 Gilly</div>
-        <div class="card">📍 Marcinelle</div>
-        <div class="card">📍 Couillet</div>
-        <div class="card">📍 Marchienne-au-Pont</div>
-        <div class="card">📍 Mont-sur-Marchienne</div>
-        <div class="card">📍 Ransart</div>
-        <div class="card">📍 Courcelles</div>
-        <div class="card">📍 Fleurus</div>
-        <div class="card">📍 Châtelet</div>
+      <div class="grid gap-6" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        
+        <a href="/locations/les-bons-villers" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Les Bons Villers</h3>
+          <p class="text-muted mt-2 text-sm">Frasnes-lez-Gosselies, Rèves, Mellet...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/fleurus" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Fleurus</h3>
+          <p class="text-muted mt-2 text-sm">Heppignies, Lambusart, Wagnelée...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/chatelet" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Châtelet</h3>
+          <p class="text-muted mt-2 text-sm">Châtelineau, Bouffioulx...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/gerpinnes" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Gerpinnes</h3>
+          <p class="text-muted mt-2 text-sm">Acoz, Loverval, Joncret...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/ham-sur-heure-nalinnes" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Ham-sur-Heure-Nalinnes</h3>
+          <p class="text-muted mt-2 text-sm">Nalinnes, Jamioulx, Marbaix...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/montigny-le-tilleul" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Montigny-le-Tilleul</h3>
+          <p class="text-muted mt-2 text-sm">Landelies, Bomerée...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/fontaine-l-eveque" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Fontaine-l'Évêque</h3>
+          <p class="text-muted mt-2 text-sm">Forchies-la-Marche, Leernes...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/courcelles" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Courcelles</h3>
+          <p class="text-muted mt-2 text-sm">Souvret, Trazegnies, Gouy-lez-Piéton...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+        <a href="/locations/pont-a-celles" class="card location-card text-center" style="text-decoration: none; color: inherit;">
+          <h3 class="text-primary">Pont-à-Celles</h3>
+          <p class="text-muted mt-2 text-sm">Luttre, Viesville, Buzet...</p>
+          <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+        </a>
+
+      </div>
+
+      <div class="card mt-12 bg-accent text-center" style="padding: 40px;">
+        <h2 class="text-primary">Vous ne trouvez pas votre commune ?</h2>
+        <p class="text-muted mt-4 max-w-2xl mx-auto">Nous intervenons sur l'ensemble du Hainaut Oriental. Si vous êtes situé dans un rayon de 25 km autour de Charleroi (ex: Thuin, Anderlues, Farciennes, etc.), appelez-nous pour confirmer notre délai d'intervention.</p>
+        <a href="/contact" class="btn btn-primary mt-6">Nous Contacter</a>
       </div>
     </div>
   </section>
@@ -36,7 +87,22 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .text-white { color: white; }
   .text-accent { color: var(--accent); }
+  .text-primary { color: var(--primary); }
+  .text-muted { color: var(--text-muted); line-height: 1.8; }
+  .mt-2 { margin-top: 0.5rem; }
   .mt-4 { margin-top: 1rem; }
+  .mt-6 { margin-top: 1.5rem; }
   .mt-12 { margin-top: 3rem; }
+  .mb-12 { margin-bottom: 3rem; }
   .max-w-2xl { max-width: 800px; margin-left: auto; margin-right: auto; }
+  
+  .location-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--primary);
+  }
 </style>

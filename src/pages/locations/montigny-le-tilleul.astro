@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Plombier Montigny-le-Tilleul | Urgence & Entretien Chaudière">
+  <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
+    <div class="container text-center">
+      <span class="badge">Dépannage Rapide & Premium</span>
+      <h1 class="text-white mt-4">Plombier Chauffagiste à Montigny-le-Tilleul</h1>
+      <p class="text-accent mt-4 max-w-2xl mx-auto">Votre expert local en plomberie pour le 6110 (Montigny-le-Tilleul, Landelies). Rénovation sanitaire de luxe, dépannage chaudière et débouchage canalisation 24/7.</p>
+      <div class="mt-8 flex gap-4 justify-center">
+        <a href="tel:0479123456" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Montigny-le-Tilleul</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 2fr 1fr; gap: 40px;">
+      
+      <div class="content-area">
+        <h2>Un service de plomberie d'excellence à Montigny-le-Tilleul</h2>
+        <p class="text-muted mt-4 mb-8">Située près de l'Hôpital Vésale, la commune de Montigny-le-Tilleul est reconnue pour ses quartiers résidentiels exigeant des prestations de très haute qualité. Nous y proposons l'installation d'équipements sanitaires haut de gamme, l'entretien rigoureux des systèmes de chauffage et une intervention d'urgence extrêmement rapide et soignée pour éviter tout dégât des eaux.</p>
+
+        <h2>Nos spécialités par quartier</h2>
+        <div class="grid mt-4 mb-8" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="card p-4">
+            <h4 class="text-primary">Montigny Centre & Vésale</h4>
+            <p class="text-sm mt-2 text-muted">Spécialistes de la rénovation complète de salles de bain : douches à l'italienne, baignoires en îlot et robinetterie design (Grohe, Hansgrohe).</p>
+          </div>
+          <div class="card p-4">
+            <h4 class="text-primary">Landelies & Bords de Sambre</h4>
+            <p class="text-sm mt-2 text-muted">Dépannage urgent contre les refoulements et débouchage d'égouts avec inspection vidéo pour les maisons en contrebas.</p>
+          </div>
+          <div class="card p-4">
+            <h4 class="text-primary">Quartiers Résidentiels (Bois)</h4>
+            <p class="text-sm mt-2 text-muted">Recherche de fuite encastrée non destructive (caméra thermique) et dépannage rapide de chaudières (Vaillant, Viessmann, Bulex).</p>
+          </div>
+          <div class="card p-4">
+            <h4 class="text-primary">Traitement de l'Eau</h4>
+            <p class="text-sm mt-2 text-muted">L'eau étant calcaire, nous installons de nombreux adoucisseurs volumétriques dans la commune pour protéger vos installations sanitaires.</p>
+          </div>
+        </div>
+
+        <h2>Pourquoi nous choisir par rapport à d'autres sociétés ?</h2>
+        <div class="card mb-8 p-6 bg-light" style="border-left: 4px solid var(--primary);">
+          <p class="text-muted">La qualité de service est notre priorité. Voici pourquoi les résidents de Montigny-le-Tilleul nous recommandent à leurs voisins :</p>
+          <ul class="check-list mt-4">
+            <li>✓ <strong>Finition Impeccable :</strong> Nos plombiers portent une attention particulière aux détails (joints parfaits, alignement millimétré, nettoyage en fin de chantier).</li>
+            <li>✓ <strong>Matériel de pointe :</strong> Nous utilisons des outils professionnels (press-fitting, caméras endoscopiques) qui garantissent des réparations sans dommages collatéraux.</li>
+            <li>✓ <strong>Ponctualité garantie :</strong> Nous fixons des plages horaires précises et nous nous y tenons. En cas d'urgence, nous sommes sur place en une trentaine de minutes.</li>
+          </ul>
+        </div>
+
+        <h2>Des itinéraires directs pour une intervention express</h2>
+        <p class="text-muted mt-4 mb-8">Nous connaissons parfaitement les accès de la commune. En fonction de l'heure et du trafic sur la N53 ou près de Bomerée, nos camionnettes utilisent le R3 (Sortie 4 ou Sortie 5) pour arriver directement chez vous. Ce réseau autoroutier proche nous permet de rallier le centre de Montigny ou le village de Landelies très rapidement depuis notre base, assurant ainsi un véritable service d'urgence 24h/24.</p>
+
+      </div>
+
+      <div class="sidebar">
+        <div class="card bg-accent mb-6" style="padding: 30px;">
+          <h3 class="text-primary">Contact Local</h3>
+          <ul class="sidebar-list mt-4">
+            <li>📍 Couverture: 6110, 6111</li>
+            <li>⏱️ Délai: ~20-30 min</li>
+            <li>📞 Urgence: 0479 12 34 56</li>
+          </ul>
+          <a href="/contact" class="btn btn-primary mt-4" style="width: 100%; text-align: center;">Demander un devis</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .text-white { color: white; }
+  .text-accent { color: var(--accent); }
+  .text-primary { color: var(--primary); }
+  .text-secondary { color: var(--secondary); }
+  .text-muted { color: var(--text-muted); }
+  .mt-2 { margin-top: 0.5rem; }
+  .mt-4 { margin-top: 1rem; }
+  .mt-8 { margin-top: 2rem; }
+  .mb-6 { margin-bottom: 1.5rem; }
+  .mb-8 { margin-bottom: 2rem; }
+  .p-4 { padding: 1rem; }
+  .p-6 { padding: 1.5rem; }
+  .max-w-2xl { max-width: 800px; }
+  .bg-light { background: var(--bg-light); }
+  
+  .check-list { list-style: none; padding: 0; }
+  .check-list li { margin-bottom: 10px; font-weight: 500; color: var(--text-muted); }
+  .sidebar-list { list-style: none; padding: 0; }
+  .sidebar-list li { margin-bottom: 10px; font-size: 0.95rem; }
+  
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr !important; }
+  }
+</style>
