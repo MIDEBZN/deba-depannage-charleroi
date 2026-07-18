@@ -5,44 +5,69 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Nos Services | Plomberie, Chauffage & Débouchage Charleroi">
   <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
     <div class="container">
-      <h1 class="text-white">Nos Services</h1>
-      <p class="text-accent mt-4">Une expertise complète pour tous vos problèmes sanitaires et de chauffage.</p>
+      <h1 class="text-white">Nos Services d'Expertise</h1>
+      <p class="text-accent mt-4 max-w-2xl mx-auto">Une gamme complète de services pour répondre à tous vos besoins en plomberie, chauffage, et sanitaire sur la région de Charleroi. Cliquez sur un service pour découvrir les détails, tarifs et notre processus.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="grid gap-8" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <div class="card">
-          <div class="icon-wrapper">💧</div>
-          <h2>Dépannage Plomberie</h2>
-          <p class="mt-4">Intervention rapide pour toutes vos fuites d'eau, réparations de tuyauterie, et remplacement de robinetterie. Nous diagnostiquons et réparons avec précision.</p>
-          <ul class="mt-4 text-muted">
-            <li>✓ Recherche de fuite</li>
-            <li>✓ Remplacement WC</li>
-            <li>✓ Réparation boiler</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="icon-wrapper">🚽</div>
-          <h2>Débouchage</h2>
-          <p class="mt-4">Éviers, toilettes ou canalisations principales bouchées ? Nous utilisons un équipement de curage haute pression pour résoudre le problème définitivement.</p>
-          <ul class="mt-4 text-muted">
-            <li>✓ Débouchage égout</li>
-            <li>✓ Inspection caméra</li>
-            <li>✓ Curage haute pression</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="icon-wrapper">🔥</div>
-          <h2>Chauffage</h2>
-          <p class="mt-4">Entretien annuel, dépannage en urgence ou installation de nouvelles chaudières. Nos chauffagistes sont agréés toutes marques.</p>
-          <ul class="mt-4 text-muted">
-            <li>✓ Entretien chaudière</li>
-            <li>✓ Dépannage radiateur</li>
-            <li>✓ Installation chauffage</li>
-          </ul>
-        </div>
+        
+        <a href="/services/depannage-urgence" class="service-card-link">
+          <div class="card h-full">
+            <div class="icon-wrapper">🚨</div>
+            <h2>Dépannage d'Urgence</h2>
+            <p class="mt-4 text-muted">Intervention 24/7 en moins de 30 minutes pour toutes vos fuites d'eau majeures, pannes totales et ruptures de tuyaux.</p>
+            <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+          </div>
+        </a>
+
+        <a href="/services/debouchage" class="service-card-link">
+          <div class="card h-full">
+            <div class="icon-wrapper">🚽</div>
+            <h2>Débouchage</h2>
+            <p class="mt-4 text-muted">Débouchage de WC, éviers, égouts et canalisations. Curage haute pression et vidange de fosses septiques.</p>
+            <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+          </div>
+        </a>
+
+        <a href="/services/detection-fuites" class="service-card-link">
+          <div class="card h-full">
+            <div class="icon-wrapper">💧</div>
+            <h2>Détection de Fuites</h2>
+            <p class="mt-4 text-muted">Recherche non destructive par caméra thermique, gaz traceur ou ultrasons. Rapport complet pour votre assurance.</p>
+            <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+          </div>
+        </a>
+
+        <a href="/services/chauffage-chaudieres" class="service-card-link">
+          <div class="card h-full">
+            <div class="icon-wrapper">🔥</div>
+            <h2>Chauffage & Chaudières</h2>
+            <p class="mt-4 text-muted">Installation, entretien annuel obligatoire et réparation urgente de chaudières, chauffe-eau et radiateurs.</p>
+            <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+          </div>
+        </a>
+
+        <a href="/services/installations-sanitaires" class="service-card-link">
+          <div class="card h-full">
+            <div class="icon-wrapper">🚿</div>
+            <h2>Installations Sanitaires</h2>
+            <p class="mt-4 text-muted">Rénovation complète de salles de bain, installation de WC (standards et suspendus), douches, éviers et robinetterie.</p>
+            <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+          </div>
+        </a>
+
+        <a href="/services/traitement-eau" class="service-card-link">
+          <div class="card h-full">
+            <div class="icon-wrapper">✨</div>
+            <h2>Traitement de l'Eau</h2>
+            <p class="mt-4 text-muted">Installation, réglage et entretien d'adoucisseurs d'eau et de systèmes de filtration pour dire adieu au calcaire.</p>
+            <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -53,6 +78,8 @@ import Layout from '../layouts/Layout.astro';
   .text-accent { color: var(--accent); }
   .mt-4 { margin-top: 1rem; }
   .text-muted { color: var(--text-muted); line-height: 1.8; }
+  .max-w-2xl { max-width: 800px; margin-left: auto; margin-right: auto; }
+  
   .icon-wrapper {
     width: 60px;
     height: 60px;
@@ -63,5 +90,27 @@ import Layout from '../layouts/Layout.astro';
     justify-content: center;
     font-size: 24px;
     margin-bottom: 20px;
+  }
+  
+  .service-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .service-card-link .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-card-link .text-muted {
+    flex-grow: 1;
+  }
+  
+  .service-card-link:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--primary);
   }
 </style>
