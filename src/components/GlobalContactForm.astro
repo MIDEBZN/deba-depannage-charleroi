@@ -1,0 +1,51 @@
+---
+---
+<section class="section bg-light border-y" id="devis">
+  <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+    <div>
+      <span class="text-primary font-bold uppercase text-sm">Contact Rapide</span>
+      <h2 class="mt-2">Demandez un Devis Gratuit</h2>
+      <p class="text-muted mt-4">Un problème de plomberie ? Une rénovation en vue ? Décrivez votre problème et nous vous recontacterons dans les plus brefs délais avec une estimation.</p>
+    </div>
+    <div class="card p-6" style="background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+      <form action="https://formsubmit.co/midebzn@gmail.com" method="POST" class="contact-form">
+        <!-- Honey pot -->
+        <input type="text" name="_honey" style="display:none">
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nouveau Lead - Dépannage Plombier Charleroi">
+        <input type="hidden" name="_next" value="https://deba-depannage.vercel.app/contact?success=true">
+        
+        <div class="form-group mb-4">
+          <label for="global-name" class="block mb-2 text-sm font-bold text-secondary">Nom complet</label>
+          <input type="text" id="global-name" name="name" required class="w-full p-3 border rounded">
+        </div>
+        <div class="form-group mb-4">
+          <label for="global-phone" class="block mb-2 text-sm font-bold text-secondary">Téléphone</label>
+          <input type="tel" id="global-phone" name="phone" required class="w-full p-3 border rounded">
+        </div>
+        <div class="form-group mb-4">
+          <label for="global-message" class="block mb-2 text-sm font-bold text-secondary">Votre problème</label>
+          <textarea id="global-message" name="message" rows="4" required class="w-full p-3 border rounded"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full text-center" style="width: 100%; border: none; cursor: pointer;">Envoyer la demande</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .w-full { width: 100%; box-sizing: border-box; }
+  .p-3 { padding: 0.75rem; }
+  .p-6 { padding: 1.5rem; }
+  .border { border: 1px solid #e2e8f0; }
+  .border-y { border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+  .rounded { border-radius: 4px; }
+  .block { display: block; }
+  .font-bold { font-weight: 700; }
+  .text-secondary { color: var(--secondary); }
+  .bg-light { background: var(--bg-light, #f8f9fa); }
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr !important; }
+  }
+</style>
