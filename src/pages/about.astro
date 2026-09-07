@@ -4,7 +4,10 @@ import { Image } from 'astro:assets';
 import serviceImg from '../assets/images/service.png';
 ---
 
-<Layout title="À Propos | Dépannage Plombier Charleroi">
+<Layout 
+  title="À Propos | Deba Dépannage Plombier Charleroi"
+  description="Découvrez l'équipe de Dépannage Plombier Charleroi. Experts qualifiés en urgence plomberie, chauffage et débouchage. Notre philosophie et garanties."
+>
   <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
     <div class="container">
       <h1 class="text-white">À Propos de Nous</h1>
@@ -15,17 +18,46 @@ import serviceImg from '../assets/images/service.png';
   <section class="section">
     <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
       <div>
-        <Image src={serviceImg} alt="Plombier au travail" style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);" />
+        <Image src={serviceImg} alt="Technicien de Deba Dépannage préparant ses outils d\'intervention" loading="lazy" style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);" />
       </div>
       <div>
         <span class="text-primary font-bold uppercase text-sm">Notre Histoire</span>
         <h2 class="mt-4">Plus de 15 ans d'expérience au service des Carolos</h2>
-        <p class="mt-4 text-muted">Fondée à Charleroi, Dépannage Plombier Charleroi est une entreprise familiale qui s'est donnée pour mission de fournir des services de plomberie de la plus haute qualité. Nous comprenons qu'une urgence plomberie est stressante, c'est pourquoi nous mettons l'accent sur la rapidité, la transparence des prix et un service client irréprochable.</p>
+        <p class="mt-4 text-muted">Fondée à Charleroi, Deba Dépannage Plombier Charleroi est une entreprise familiale qui s'est donnée pour mission de fournir des services de plomberie de la plus haute qualité. Nous comprenons qu'une urgence plomberie est stressante, c'est pourquoi nous mettons l'accent sur la rapidité, la transparence des prix et un service client irréprochable.</p>
         <p class="mt-4 text-muted">Notre équipe de techniciens est certifiée et suit régulièrement des formations pour maîtriser les dernières technologies en matière de chauffage et de sanitaires.</p>
-        <div class="mt-8 flex gap-4">
-          <a href="/contact" class="btn btn-primary">Contactez-nous</a>
+        <div class="mt-6 p-6 rounded bg-light" style="background: var(--bg-light, #f8f9fa); border: 1px solid #e2e8f0; border-left: 4px solid var(--primary);">
+          <h3 class="text-secondary text-lg mb-2" style="font-size: 1.25rem; font-weight: bold;">Notre Identité (Entity Factsheet)</h3>
+          <ul class="text-muted text-sm mt-4" style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+            <li class="mb-2"><strong>Nom Commercial :</strong> Deba Dépannage Plombier Charleroi</li>
+            <li class="mb-2"><strong>Raison sociale :</strong> Dépannage Plombier Charleroi</li>
+            <li class="mb-2"><strong>Adresse :</strong> Av. des Alliés 42, 6000 Charleroi, Belgique</li>
+            <li class="mb-2"><strong>Secteur d'activité :</strong> Plomberie, Chauffage, Débouchage</li>
+            <li class="mb-2"><strong>Agréments (Région Wallonne) :</strong> Compétences Gaz et Mazout</li>
+            <li class="mb-2"><strong>Profil Google :</strong> <a href="https://g.page/r/YOUR_GOOGLE_LINK" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Voir notre fiche d'établissement</a></li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="card p-6 border-accent">
+        <h3 class="text-secondary mb-4">Notre Philosophie d'Intervention</h3>
+        <p class="text-muted">Nous croyons fermement qu'une urgence de plomberie ne doit pas être une occasion d'abuser de la détresse des clients. Dès votre appel, nous posons un diagnostic par téléphone pour évaluer la gravité de la situation (fuite majeure, panne de chauffage en hiver). Si l'intervention est requise, notre technicien se rend sur place avec un équipement complet.</p>
+      </div>
+      <div class="card p-6 border-accent">
+        <h3 class="text-secondary mb-4">Notre Politique Tarifaire</h3>
+        <p class="text-muted">La transparence est au cœur de notre service. Voici comment se déroule une intervention standard :</p>
+        <ol class="text-muted mt-4 pl-4" style="padding-left: 20px;">
+          <li class="mb-2"><strong>Diagnostic sur place :</strong> Évaluation de l'origine de la fuite ou de la panne.</li>
+          <li class="mb-2"><strong>Devis clair :</strong> Nous vous annonçons le prix (déplacement + main-d'œuvre + pièces) <em>avant</em> de commencer les réparations.</li>
+          <li class="mb-2"><strong>Accord mutuel :</strong> Les travaux ne débutent qu'avec votre validation.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="container text-center mt-12">
+      <a href="/contact" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Contactez-nous pour un diagnostic</a>
     </div>
   </section>
 </Layout>

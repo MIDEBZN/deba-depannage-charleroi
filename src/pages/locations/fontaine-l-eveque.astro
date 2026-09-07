@@ -1,15 +1,19 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Plombier Fontaine-l'Évêque | Débouchage & Dépannage Urgence">
+<Layout 
+  title="Plombier Fontaine-l'Évêque 24/7 | Débouchage & Dépannage (6140)"
+  description="Service de plomberie 24/7 à Fontaine-l'Évêque, Forchies-la-Marche et Leernes (6140). Dépannage urgence, <a href="/services/debouchage" style="color: var(--primary); text-decoration: underline;">débouchage canalisation</a> et réparations."
+  locationName="Fontaine-l'Évêque"
+>
   <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
     <div class="container text-center">
       <span class="badge">Intervention à l'Ouest de Charleroi</span>
       <h1 class="text-white mt-4">Plombier Chauffagiste à Fontaine-l'Évêque</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">Expertise plomberie et chauffage sur le 6140 (Fontaine-l'Évêque, Forchies-la-Marche, Leernes). Urgences 24/7, débouchage haute pression et entretien chaudière.</p>
       <div class="mt-8 flex gap-4 justify-center">
-        <a href="tel:0479123456" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Fontaine</a>
+        <a href="tel:0465137598" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Fontaine</a>
       </div>
     </div>
   </section>
@@ -25,15 +29,15 @@ import Layout from '../../layouts/Layout.astro';
         <div class="grid mt-4 mb-8" style="grid-template-columns: 1fr 1fr; gap: 20px;">
           <div class="card p-4">
             <h4 class="text-primary">Fontaine-l'Évêque Centre</h4>
-            <p class="text-sm mt-2 text-muted">Dépannage ultra-rapide pour toutes vos fuites d'eau urgentes et problèmes de canalisations bouchées.</p>
+            <p class="text-sm mt-2 text-muted">Dépannage ultra-rapide pour toutes vos <a href="/services/depannage-urgence" style="color: var(--primary); text-decoration: underline;">fuites d'eau</a> urgentes et problèmes de canalisations bouchées.</p>
           </div>
           <div class="card p-4">
             <h4 class="text-primary">Forchies-la-Marche</h4>
-            <p class="text-sm mt-2 text-muted">Entretien de chaudières au gaz et au mazout (techniciens certifiés G1/L) et pose de radiateurs thermostatiques.</p>
+            <p class="text-sm mt-2 text-muted"><a href="/services/chauffage-chaudieres" style="color: var(--primary); text-decoration: underline;">Entretien de chaudières</a> au gaz et au mazout (techniciens qualifiés/L) et pose de radiateurs thermostatiques.</p>
           </div>
           <div class="card p-4">
             <h4 class="text-primary">Leernes & Abbaye d'Aulne</h4>
-            <p class="text-sm mt-2 text-muted">Recherche de fuite avec caméra thermique dans les maisons en pierre. Installation de systèmes de filtration d'eau.</p>
+            <p class="text-sm mt-2 text-muted"><a href="/services/detection-fuites" style="color: var(--primary); text-decoration: underline;">Recherche de fuite</a> avec caméra thermique dans les maisons en pierre. Installation de systèmes de filtration d'eau.</p>
           </div>
           <div class="card p-4">
             <h4 class="text-primary">Zones Commerciales</h4>
@@ -61,8 +65,8 @@ import Layout from '../../layouts/Layout.astro';
           <h3 class="text-primary">Contact Local</h3>
           <ul class="sidebar-list mt-4">
             <li>📍 Couverture: 6140 (Fontaine, Forchies, Leernes)</li>
-            <li>⏱️ Délai: ~30-40 min</li>
-            <li>📞 Urgence: 0479 12 34 56</li>
+            <li>⏱️ Délai: Intervention rapide</li>
+            <li>📞 Urgence: 0465 13 75 98</li>
           </ul>
           <a href="/contact" class="btn btn-primary mt-4" style="width: 100%; text-align: center;">Demander un devis</a>
         </div>
@@ -70,6 +74,26 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <!-- Location Injection -->
+  <section class="section bg-light" style="background: #f8f9fa; padding: 40px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      
+      <div class="card p-6 border-accent" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">🏆 Cas d'étude : Intervention récente à Fontaine-L-Eveque</h3>
+        <p class="text-muted"><strong>Mission :</strong> Remplacement d'un chauffe-eau électrique en panne totale en moins de 4h à Fontaine-l'Évêque.</p>
+        <p class="text-muted mt-2">Notre technicien est arrivé avec tout le matériel nécessaire pour sécuriser les lieux et effectuer la réparation le jour même, évitant ainsi un dégât des eaux majeur.</p>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h3 class="text-secondary mb-4">📍 Vous n'êtes pas à Fontaine-L-Eveque ?</h3>
+        <p class="text-muted mb-4">Nous couvrons l'ensemble de la région de Charleroi et du Hainaut.</p>
+        <a href="/locations" class="btn btn-secondary" style="border: 1px solid var(--primary); color: var(--primary);">Voir toutes nos zones d'intervention</a>
+      </div>
+
+    </div>
+  </section>
+
 </Layout>
 
 <style>

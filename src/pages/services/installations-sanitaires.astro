@@ -2,14 +2,66 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Installations Sanitaires & Rénovation Salle de Bain Charleroi">
+<Layout 
+  title="Installation Sanitaire Charleroi | Salle de Bain & WC"
+  description="Installation sanitaire complète à Charleroi : rénovation de salle de bain, pose de douche, WC suspendu et robinetterie. Devis sur mesure."
+  serviceName="Installations Sanitaires"
+>
   <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
     <div class="container text-center">
       <span class="badge">Design & Fonctionnalité</span>
+      <div style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;"><a href="/" style="color: white; text-decoration: underline;">Accueil</a> > <a href="/services" style="color: white; text-decoration: underline;">Services</a> > Installations Sanitaires</div>
       <h1 class="text-white mt-4">Installations Sanitaires & Rénovations</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">De l'installation d'un simple WC suspendu à la rénovation complète de votre salle de bain clé en main. Nous allions esthétique moderne et plomberie durable.</p>
       <div class="mt-8 flex gap-4 justify-center">
         <a href="/contact" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Demander un devis gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- GEO Answer Block & Structured Data -->
+  <section class="section bg-light border-y">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="answer-block card p-6" style="background: white; border-top: 4px solid var(--primary);">
+        <h3>Ce qu'il faut savoir</h3>
+        <p><strong>Quoi ?</strong> Rénovation de salles de bain, installation de WC (suspendus), douches et robinetterie.</p>
+        <p><strong>Où ?</strong> Charleroi et Hainaut.</p>
+        <p><strong>Processus ?</strong> Visite sur site, devis gratuit détaillé, puis réalisation des travaux sanitaires.</p>
+        <p><strong>Qualité ?</strong> Nous travaillons avec des marques reconnues (Grohe, Geberit) pour garantir la durabilité de votre installation.</p>
+      </div>
+      <div class="facts-table">
+        <h3 class="text-secondary mb-4">Fiche Service</h3>
+        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: var(--box-shadow); border-radius: var(--border-radius); overflow: hidden;">
+          <tbody style="font-size: 0.95rem;">
+            <tr><td>Service</td><td>Installation Sanitaire & Rénovation</td></tr>
+           <tr><td>Type de projets</td><td>Salle de bain, cuisine, buanderie</td></tr>
+           <tr><td>Éléments</td><td>Douche italienne, WC suspendu, baignoire, boiler</td></tr>
+           <tr><td>Marques fréquentes</td><td>Geberit, Grohe, Hansgrohe, Facq</td></tr>
+           <tr><td>Garantie</td><td>Garantie sur la main-d'œuvre et le matériel (selon constructeur)</td></tr>
+          </tbody>
+        </table>
+        <style>
+          .facts-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+          .facts-table tr:last-child td { border-bottom: none; }
+          .facts-table tr td:first-child { font-weight: bold; color: var(--secondary); background: var(--bg-light); width: 35%; }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Case Study -->
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1.5fr 1fr; gap: 40px;">
+      <div class="pricing-block">
+        <h2 class="text-secondary">Méthode de Tarification</h2>
+        <p>Chaque projet de rénovation ou d'installation est unique :</p><ul><li><strong>Devis préalable :</strong> Un devis détaillé est établi après visite de vos locaux.</li><li><strong>Calcul des prix :</strong> Basé sur le coût du matériel sanitaire choisi et la main-d'œuvre nécessaire (tuyauterie, pose).</li><li><strong>Acomptes :</strong> Un acompte est généralement demandé pour la commande des pièces sanitaires.</li></ul>
+      </div>
+      <div class="case-study card p-6 bg-light" style="border-left: 4px solid var(--accent);">
+        <h3 class="text-primary mt-6">Projet Récent : Rénovation Salle de bain à Fleurus</h3>
+        <p><strong>Projet :</strong> Remplacement d'une vieille baignoire par une douche à l'italienne sécurisée.</p>
+        <p><strong>Réalisation :</strong> Modification des arrivées d'eau en Alpex, pose du receveur extra-plat et de la paroi en verre.</p>
+        <p><strong>Délai de réalisation :</strong> 3 jours.</p>
       </div>
     </div>
   </section>
@@ -91,6 +143,36 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <!-- Internal Linking Injection -->
+  <section class="section bg-light" style="background: #f8f9fa; padding: 40px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">🔁 Nos autres services</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="/services/depannage-urgence" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Dépannage Urgence</a><a href="/services/debouchage" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Débouchage</a><a href="/services/chauffage-chaudieres" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Chauffage & Chaudières</a><a href="/services/detection-fuites" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Détection Fuites</a><a href="/services/traitement-eau" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Traitement Eau</a>
+        </div>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">📚 Guides Recommandés</h3>
+        <ul class="text-muted" style="list-style-type: none; padding-left: 0;">
+          <li class="mb-2">🔹 <a href="/blog/renovation-salle-de-bain-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Renovation Salle De Bain Charleroi</a></li><li class="mb-2">🔹 <a href="/blog/choisir-robinet-cuisine-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Choisir Robinet Cuisine Charleroi</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <div class="container text-center mt-8">
+      <div class="card p-4" style="background: var(--primary); color: white; border-radius: 8px;">
+        <h3 class="text-white mb-2" style="font-size: 1.2rem;">📍 Besoin de ce service près de chez vous ?</h3>
+        <p class="mb-4">Nous couvrons tout le Hainaut.</p>
+        <a href="/locations" class="btn" style="background: white; color: var(--primary);">Consulter nos zones d'intervention</a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
 
 <style>

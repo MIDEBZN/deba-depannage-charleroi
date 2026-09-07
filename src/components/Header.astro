@@ -4,42 +4,55 @@ import logoImg from '../assets/images/logo.png';
 ---
 
 <header class="header">
-  <div class="top-bar">
-    <div class="container flex justify-between items-center">
-      <div class="contact-info">
-        <span>📧 contact@depannageplombiercharleroi.be</span>
-        <span>📍 <a href="https://maps.app.goo.gl/wLrCE3QZhcmmRTW98" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Av. des Alliés 42, 6000 Charleroi</a></span>
-      </div>
-      <div class="social-links">
-        <a href="#">Facebook</a>
-      </div>
-    </div>
-  </div>
+
   <div class="main-header">
-    <div class="container flex justify-between items-center">
+    <div class="container flex justify-between items-center header-inner">
       <a href="/" class="logo" style="text-decoration: none;">
-        <Image src={logoImg} alt="Dépannage Plombier Charleroi Logo" width={250} height={80} style="height: 70px; width: auto; object-fit: contain;" />
+        <Image src={logoImg} alt="Logo Deba Dépannage Plombier Charleroi" width={250} height={80} style="height: 70px; width: auto; object-fit: contain;" />
       </a>
       
-      <nav class="nav-links">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu principal">
+        <span class="hamburger-icon">☰</span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
         <ul>
           <li><a href="/">Accueil</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/locations">Zones d'Intervention</a></li>
+          <li><a href="/tarifs">Tarifs</a></li>
           <li><a href="/about">À Propos</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+        <div class="header-cta mobile-cta">
+          <a href="tel:0465137598" class="btn btn-primary call-btn">
+            <span class="icon">📞</span>
+            0465 13 75 98
+          </a>
+        </div>
       </nav>
       
-      <div class="header-cta">
-        <a href="tel:0479123456" class="btn btn-primary call-btn">
+      <div class="header-cta desktop-cta">
+        <a href="tel:0465137598" class="btn btn-primary call-btn">
           <span class="icon">📞</span>
-          0479 12 34 56
+          0465 13 75 98
         </a>
       </div>
     </div>
   </div>
 </header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+</script>
 
 <style>
   .header {
@@ -50,48 +63,18 @@ import logoImg from '../assets/images/logo.png';
     z-index: 100;
   }
   
-  .top-bar {
-    background: var(--secondary);
-    color: var(--text-light);
-    padding: 8px 0;
-    font-size: 0.9rem;
-  }
-  
-  .contact-info span {
-    margin-right: 20px;
-  }
+
   
   .main-header {
     padding: 15px 0;
+    position: relative;
   }
   
   .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .logo-icon {
-    font-size: 2.5rem;
-  }
-  
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .brand-name {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--secondary);
-    line-height: 1;
-  }
-  
-  .tagline {
-    font-size: 0.8rem;
-    color: var(--primary);
-    font-weight: 600;
-    text-transform: uppercase;
+    z-index: 101;
   }
   
   .nav-links ul {
@@ -112,5 +95,60 @@ import logoImg from '../assets/images/logo.png';
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--secondary);
+    cursor: pointer;
+    z-index: 101;
+  }
+  
+  .mobile-cta {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .desktop-cta {
+      display: none;
+    }
+    
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: clip-path 0.3s ease-in-out;
+    }
+    
+    .nav-links.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .nav-links ul {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .mobile-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
   }
 </style>

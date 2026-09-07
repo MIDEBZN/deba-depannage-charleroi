@@ -2,9 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Nos Services | Plomberie, Chauffage & Débouchage Charleroi">
+<Layout 
+  title="Services Plomberie à Charleroi | Dépannage & Chauffage"
+  description="Découvrez tous les services de plomberie proposés par Deba Dépannage à Charleroi: urgence 24/7, débouchage, fuite, chauffage et sanitaire."
+>
   <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
     <div class="container">
+      <div style="font-size: 0.9rem; margin-bottom: 20px; opacity: 0.8;"><a href="/" style="color: white; text-decoration: underline;">Accueil</a> > Services</div>
       <h1 class="text-white">Nos Services d'Expertise</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">Une gamme complète de services pour répondre à tous vos besoins en plomberie, chauffage, et sanitaire sur la région de Charleroi. Cliquez sur un service pour découvrir les détails, tarifs et notre processus.</p>
     </div>
@@ -18,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="card h-full">
             <div class="icon-wrapper">🚨</div>
             <h2>Dépannage d'Urgence</h2>
-            <p class="mt-4 text-muted">Intervention 24/7 en moins de 30 minutes pour toutes vos fuites d'eau majeures, pannes totales et ruptures de tuyaux.</p>
+            <p class="mt-4 text-muted">Intervention rapide 24/7 pour toutes vos fuites d'eau majeures, pannes totales et ruptures de tuyaux.</p>
             <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
           </div>
         </a>
@@ -45,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="card h-full">
             <div class="icon-wrapper">🔥</div>
             <h2>Chauffage & Chaudières</h2>
-            <p class="mt-4 text-muted">Installation, entretien annuel obligatoire et réparation urgente de chaudières, chauffe-eau et radiateurs.</p>
+            <p class="mt-4 text-muted">Installation, entretien et réparation de chaudières, chauffe-eau et radiateurs. Certification G1/L.</p>
             <span class="text-primary font-bold mt-4 inline-block">Voir les détails →</span>
           </div>
         </a>
@@ -68,6 +72,28 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </a>
 
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light" style="padding: 60px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: flex-start;">
+      <div>
+        <h2 class="text-secondary">Transparence des Prix</h2>
+        <p class="text-muted mt-4">Chez Deba Dépannage, notre tarification est claire. Nos devis sont composés de :</p>
+        <ul class="text-muted mt-4" style="list-style-type: disc; padding-left: 20px;">
+          <li><strong>Frais de déplacement :</strong> Forfaitaire selon la distance.</li>
+          <li><strong>Main-d'œuvre :</strong> Facturée à la première heure indivisible, puis par tranches de 30 minutes.</li>
+          <li><strong>Matériel :</strong> Uniquement les pièces nécessaires à la réparation.</li>
+          <li><strong>Majoration :</strong> Applicable pour les interventions de nuit, week-end ou jours fériés.</li>
+        </ul>
+        <p class="text-muted mt-4"><em>Le devis est toujours communiqué et validé avant le début des travaux (hors urgence immédiate de mise en sécurité).</em></p>
+      </div>
+      <div>
+        <h2 class="text-secondary">Où Intervenons-Nous ?</h2>
+        <p class="text-muted mt-4">Nous couvrons l'ensemble du Grand Charleroi et du Hainaut avec des délais d'intervention optimisés.</p>
+        <p class="text-muted mt-4">Découvrez si nous couvrons votre commune :</p>
+        <a href="/locations" class="btn btn-primary mt-6">Voir nos zones d'intervention</a>
       </div>
     </div>
   </section>

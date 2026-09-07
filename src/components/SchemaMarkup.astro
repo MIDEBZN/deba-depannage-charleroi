@@ -1,0 +1,250 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  serviceName?: string;
+  locationName?: string;
+}
+
+const { title, description, serviceName, locationName } = Astro.props;
+
+const siteUrl = "https://www.depannageplombiercharleroi.be";
+const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
+
+// Base LocalBusiness / Plumber / EmergencyService schema with complete Service Catalog
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Plumber", "EmergencyService", "LocalBusiness"],
+      "@id": `${siteUrl}/#organization`,
+      "name": "Deba Dépannage Plombier Charleroi",
+      "url": siteUrl,
+      "logo": `${siteUrl}/favicon-new.jpeg`,
+      "image": `${siteUrl}/favicon-new.jpeg`,
+      "telephone": "+32465137598",
+      "email": "midebzn@gmail.com",
+      "priceRange": "€€",
+      "description": "Service de dépannage plomberie d'urgence, débouchage canalisation, chauffage et sanitaire à Charleroi et sa région 24h/24 et 7j/7.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. des Alliés 42",
+        "addressLocality": "Charleroi",
+        "postalCode": "6000",
+        "addressRegion": "Hainaut",
+        "addressCountry": "BE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.4124,
+        "longitude": 4.4437
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Charleroi" },
+        { "@type": "City", "name": "Châtelet" },
+        { "@type": "City", "name": "Courcelles" },
+        { "@type": "City", "name": "Fleurus" },
+        { "@type": "City", "name": "Fontaine-l'Évêque" },
+        { "@type": "City", "name": "Gerpinnes" },
+        { "@type": "City", "name": "Ham-sur-Heure-Nalinnes" },
+        { "@type": "City", "name": "Les Bons Villers" },
+        { "@type": "City", "name": "Montigny-le-Tilleul" },
+        { "@type": "City", "name": "Pont-à-Celles" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catalogue des Services de Plomberie et Dépannage",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Dépannage d'Urgence",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Dépannage Plomberie d'Urgence 24/7",
+                  "description": "Intervention ultra-rapide sous 30 minutes pour fuites d'eau urgentes et réparations sanitaires à Charleroi.",
+                  "url": `${siteUrl}/services/depannage-urgence/`
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Débouchage Canalisation",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Débouchage WC & Canalisation",
+                  "description": "Débouchage haute pression pour sanitaires, éviers, baignoires, canalisations et égouts.",
+                  "url": `${siteUrl}/services/debouchage/`
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Chauffage & Chaudière",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Entretien & Réparation Chaudières",
+                  "description": "Dépannage, entretien agréé et installation de chaudières gaz et mazout.",
+                  "url": `${siteUrl}/services/chauffage-chaudieres/`
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Détection de Fuite",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Recherche de Fuites Non Destructive",
+                  "description": "Détection précise de fuites d'eau par thermographie et écoute acoustique.",
+                  "url": `${siteUrl}/services/detection-fuites/`
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Installations Sanitaires",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Rénovation & Pose Sanitaires",
+                  "description": "Création et rénovation complète de salle de bain, robinetterie et canalisations.",
+                  "url": `${siteUrl}/services/installations-sanitaires/`
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Traitement de l'Eau",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Installation Adoucisseur d'Eau",
+                  "description": "Installation et maintenance d'adoucisseurs et systèmes de filtration contre le calcaire.",
+                  "url": `${siteUrl}/services/traitement-eau/`
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      "url": siteUrl,
+      "name": "Deba Dépannage Plombier Charleroi",
+      "publisher": { "@id": `${siteUrl}/#organization` },
+      "inLanguage": "fr-BE"
+    }
+  ]
+};
+
+// Compute breadcrumb items based on current path
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean);
+const breadcrumbs = [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Accueil",
+    "item": `${siteUrl}/`
+  }
+];
+
+let accumulatedPath = siteUrl;
+pathSegments.forEach((segment, index) => {
+  accumulatedPath += `/${segment}`;
+  let name = segment.replace(/-/g, ' ');
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+
+  if (segment === 'services') name = 'Services';
+  if (segment === 'locations') name = 'Zones d\'intervention';
+  if (segment === 'depannage-urgence') name = 'Dépannage d\'Urgence';
+  if (segment === 'debouchage') name = 'Débouchage';
+  if (segment === 'chauffage-chaudieres') name = 'Chauffage & Chaudières';
+  if (segment === 'detection-fuites') name = 'Détection de Fuites';
+  if (segment === 'installations-sanitaires') name = 'Installations Sanitaires';
+  if (segment === 'traitement-eau') name = 'Traitement de l\'Eau';
+  if (segment === 'about') name = 'À Propos';
+  if (segment === 'contact') name = 'Contact';
+
+  breadcrumbs.push({
+    "@type": "ListItem",
+    "position": index + 2,
+    "name": name,
+    "item": `${accumulatedPath}/`
+  });
+});
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbs
+};
+
+// Article Schema for Blog Posts
+const isBlogPost = Astro.url.pathname.includes('/blog/') && Astro.url.pathname !== '/blog/';
+const articleSchema = isBlogPost ? {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title || "Article de Blog",
+  "description": description || "",
+  "author": {
+    "@type": "Person",
+    "name": "Thomas",
+    "url": `${siteUrl}/about/`
+  },
+  "publisher": {
+    "@id": `${siteUrl}/#organization`
+  },
+  "datePublished": "2024-01-01T08:00:00+01:00",
+  "dateModified": new Date().toISOString(),
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": currentUrl
+  }
+} : null;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(businessSchema)}></script>
+{breadcrumbs.length > 1 && (
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+)}
+{isBlogPost && articleSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+)}

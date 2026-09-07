@@ -2,14 +2,64 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Traitement de l'Eau & Adoucisseurs Charleroi | Dépannage Plombier">
+<Layout 
+  title="Adoucisseur d'Eau Charleroi | Installation & Entretien"
+  description="Installation et entretien d'adoucisseur d'eau à Charleroi. Protégez vos tuyaux et chaudières du calcaire avec nos solutions de traitement de l'eau."
+  serviceName="Traitement de l'Eau & Adoucisseurs"
+>
   <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
     <div class="container text-center">
       <span class="badge">Protégez vos installations</span>
+      <div style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;"><a href="/" style="color: white; text-decoration: underline;">Accueil</a> > <a href="/services" style="color: white; text-decoration: underline;">Services</a> > Traitement Eau</div>
       <h1 class="text-white mt-4">Traitement de l'Eau et Adoucisseurs</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">L'eau à Charleroi est souvent dure et chargée en calcaire. Protégez vos appareils électroménagers, votre chaudière et votre peau grâce à nos solutions de traitement de l'eau et d'adoucisseurs professionnels.</p>
       <div class="mt-8 flex gap-4 justify-center">
         <a href="/contact" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Demander un devis pour un adoucisseur</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- GEO Answer Block & Structured Data -->
+  <section class="section bg-light border-y">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="answer-block card p-6" style="background: white; border-top: 4px solid var(--primary);">
+        <h3>Ce qu'il faut savoir</h3>
+        <p><strong>Quoi ?</strong> Installation et réglage d'adoucisseurs d'eau (volumétriques/électroniques).</p>
+        <p><strong>Pourquoi ?</strong> La région du Hainaut (SWDE) présente souvent une eau dure. L'adoucisseur protège vos chaudières et canalisations du calcaire.</p>
+        <p><strong>Entretien ?</strong> Nous proposons également l'entretien annuel (recharge en sel, désinfection des résines).</p>
+      </div>
+      <div class="facts-table">
+        <h3 class="text-secondary mb-4">Fiche Service</h3>
+        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: var(--box-shadow); border-radius: var(--border-radius); overflow: hidden;">
+          <tbody style="font-size: 0.95rem;">
+            <tr><td>Service</td><td>Adoucisseurs d'Eau & Traitement</td></tr>
+           <tr><td>Problème visé</td><td>Eau dure (calcaire important dans le Hainaut/SWDE)</td></tr>
+           <tr><td>Solutions</td><td>Adoucisseur au sel (résine), filtres anticalcaires</td></tr>
+           <tr><td>Entretien</td><td>Annuel (désinfection des résines, réglage de la dureté)</td></tr>
+          </tbody>
+        </table>
+        <style>
+          .facts-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+          .facts-table tr:last-child td { border-bottom: none; }
+          .facts-table tr td:first-child { font-weight: bold; color: var(--secondary); background: var(--bg-light); width: 35%; }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Case Study -->
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1.5fr 1fr; gap: 40px;">
+      <div class="pricing-block">
+        <h2 class="text-secondary">Méthode de Tarification</h2>
+        <p>Le budget pour le traitement de l'eau comprend :</p><ul><li><strong>L'appareil :</strong> Le prix varie selon la capacité (litres de résine) et le type de vanne (volumétrique).</li><li><strong>L'installation :</strong> Modification de la tuyauterie après le compteur d'eau et création d'une évacuation (by-pass inclus).</li><li><strong>Le suivi :</strong> Forfait d'entretien annuel disponible sur demande.</li></ul>
+      </div>
+      <div class="case-study card p-6 bg-light" style="border-left: 4px solid var(--accent);">
+        <h3 class="text-primary mt-6">Intervention Récente : Pose d'adoucisseur à Courcelles</h3>
+        <p><strong>Contexte :</strong> Changement de chaudière et volonté de protéger la nouvelle installation (dureté locale élevée).</p>
+        <p><strong>Solution :</strong> Installation d'un adoucisseur volumétrique 15L avec filtre à sédiments en amont.</p>
+        <p><strong>Durée :</strong> 1 demi-journée.</p>
       </div>
     </div>
   </section>
@@ -89,6 +139,36 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <!-- Internal Linking Injection -->
+  <section class="section bg-light" style="background: #f8f9fa; padding: 40px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">🔁 Nos autres services</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="/services/depannage-urgence" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Dépannage Urgence</a><a href="/services/debouchage" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Débouchage</a><a href="/services/chauffage-chaudieres" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Chauffage & Chaudières</a><a href="/services/detection-fuites" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Détection Fuites</a><a href="/services/installations-sanitaires" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Installations Sanitaires</a>
+        </div>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">📚 Guides Recommandés</h3>
+        <ul class="text-muted" style="list-style-type: none; padding-left: 0;">
+          <li class="mb-2">🔹 <a href="/blog/eviter-calcaire-plomberie-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Eviter Calcaire Plomberie Charleroi</a></li><li class="mb-2">🔹 <a href="/blog/problemes-pression-eau-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Problemes Pression Eau Charleroi</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <div class="container text-center mt-8">
+      <div class="card p-4" style="background: var(--primary); color: white; border-radius: 8px;">
+        <h3 class="text-white mb-2" style="font-size: 1.2rem;">📍 Besoin de ce service près de chez vous ?</h3>
+        <p class="mb-4">Nous couvrons tout le Hainaut.</p>
+        <a href="/locations" class="btn" style="background: white; color: var(--primary);">Consulter nos zones d'intervention</a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
 
 <style>

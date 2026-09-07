@@ -1,15 +1,67 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Dépannage d'Urgence 24/7 Charleroi | Dépannage Plombier Charleroi">
+<Layout 
+  title="Plombier Urgence Charleroi 24/7 | Dépannage Rapide"
+  description="Dépannage plomberie d'urgence à Charleroi. Intervention rapide 24/7 pour réparation de fuites, rupture de canalisation et problèmes sanitaires."
+  serviceName="Dépannage d'Urgence Plomberie"
+>
   <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
     <div class="container text-center">
-      <span class="badge">Intervention en 30 minutes</span>
+      <span class="badge">Intervention rapidement</span>
+      <div style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;"><a href="/" style="color: white; text-decoration: underline;">Accueil</a> > <a href="/services" style="color: white; text-decoration: underline;">Services</a> > Depannage Urgence</div>
       <h1 class="text-white mt-4">Dépannage d'Urgence Plomberie à Charleroi</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">Une fuite importante ? Une canalisation rompue ? Notre équipe de garde intervient 24h/24 et 7j/7 pour sécuriser votre habitation et réparer les dégâts immédiatement.</p>
       <div class="mt-8">
-        <a href="tel:0479123456" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 30px;">📞 APPELER LE 0479 12 34 56</a>
+        <a href="tel:0465137598" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 30px;">📞 APPELER LE 0465 13 75 98</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- GEO Answer Block & Structured Data -->
+  <section class="section bg-light border-y">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="answer-block card p-6" style="background: white; border-top: 4px solid var(--primary);">
+        <h3>Ce qu'il faut savoir</h3>
+        <p><strong>Quoi ?</strong> Intervention d'urgence pour fuites, ruptures et pannes totales.</p>
+        <p><strong>Où ?</strong> Dans tout le Grand Charleroi (6000) et la proche périphérie.</p>
+        <p><strong>Quand ?</strong> Disponible 24 heures sur 24, 7 jours sur 7.</p>
+        <p><strong>Comment ?</strong> Après votre appel, nous vous donnons une estimation d'arrivée. Sur place, nous sécurisons l'installation et proposons un devis de réparation.</p>
+      </div>
+      <div class="facts-table">
+        <h3 class="text-secondary mb-4">Fiche Service</h3>
+        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: var(--box-shadow); border-radius: var(--border-radius); overflow: hidden;">
+          <tbody style="font-size: 0.95rem;">
+            <tr><td>Service</td><td>Dépannage Plomberie 24/7</td></tr>
+           <tr><td>Disponibilité</td><td>Immédiate (24h/24)</td></tr>
+           <tr><td>Secteur</td><td>Charleroi & Hainaut</td></tr>
+           <tr><td>Problèmes courants</td><td>Fuite d'eau, rupture de tuyau, perte de pression, panne chauffe-eau</td></tr>
+           <tr><td>Matériel</td><td>Camionnette équipée de pièces de rechange (vannes, tuyaux Alpex/Cuivre)</td></tr>
+          </tbody>
+        </table>
+        <style>
+          .facts-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+          .facts-table tr:last-child td { border-bottom: none; }
+          .facts-table tr td:first-child { font-weight: bold; color: var(--secondary); background: var(--bg-light); width: 35%; }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Case Study -->
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1.5fr 1fr; gap: 40px;">
+      <div class="pricing-block">
+        <h2 class="text-secondary">Méthode de Tarification</h2>
+        <p>Notre tarification d'urgence comprend :</p><ul><li>Un <strong>forfait de déplacement</strong> immédiat.</li><li>La <strong>main-d'œuvre</strong> (première heure indivisible).</li><li>Les <strong>pièces</strong> de remplacement (vannes, joints).</li><li>Une <strong>majoration</strong> s'applique pour les soirs et week-ends. Le devis exact est fourni sur place avant travaux.</li></ul>
+      </div>
+      <div class="case-study card p-6 bg-light" style="border-left: 4px solid var(--accent);">
+        <h3 class="text-primary mt-6">Intervention Récente : Rupture de canalisation à Marcinelle</h3>
+        <p><strong>Problème :</strong> Tuyau en plomb éclaté derrière une cloison (urgence nuit).</p>
+        <p><strong>Solution :</strong> Coupure générale, dérivation en Alpex et installation d'une nouvelle vanne d'arrêt.</p>
+        <p><strong>Durée :</strong> 1h30 (mise en sécurité incluse).</p>
       </div>
     </div>
   </section>
@@ -103,6 +155,36 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <!-- Internal Linking Injection -->
+  <section class="section bg-light" style="background: #f8f9fa; padding: 40px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">🔁 Nos autres services</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="/services/debouchage" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Débouchage</a><a href="/services/chauffage-chaudieres" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Chauffage & Chaudières</a><a href="/services/detection-fuites" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Détection Fuites</a><a href="/services/installations-sanitaires" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Installations Sanitaires</a><a href="/services/traitement-eau" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Traitement Eau</a>
+        </div>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">📚 Guides Recommandés</h3>
+        <ul class="text-muted" style="list-style-type: none; padding-left: 0;">
+          <li class="mb-2">🔹 <a href="/blog/urgence-plombier-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Urgence Plombier Charleroi</a></li><li class="mb-2">🔹 <a href="/blog/fuite-eau-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Fuite Eau Charleroi</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <div class="container text-center mt-8">
+      <div class="card p-4" style="background: var(--primary); color: white; border-radius: 8px;">
+        <h3 class="text-white mb-2" style="font-size: 1.2rem;">📍 Besoin de ce service près de chez vous ?</h3>
+        <p class="mb-4">Nous couvrons tout le Hainaut.</p>
+        <a href="/locations" class="btn" style="background: white; color: var(--primary);">Consulter nos zones d'intervention</a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
 
 <style>

@@ -1,0 +1,23 @@
+# robots.txt for https://www.depannageplombiercharleroi.be
+User-agent: *
+Allow: /
+Allow: /_astro/
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+
+# AI Search Bots (Answer Engine Optimization)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Crawl-delay for polite indexing
+Crawl-delay: 1
+
+# Sitemap Location
+Sitemap: https://www.depannageplombiercharleroi.be/sitemap-index.xml

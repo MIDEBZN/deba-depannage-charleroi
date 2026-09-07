@@ -1,15 +1,19 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Plombier Pont-à-Celles | Chauffagiste & Débouchage Urgent">
+<Layout 
+  title="Plombier Pont-à-Celles 24/7 | Chauffagiste & Débouchage (6230)"
+  description="Plombier dépannage 24/7 à Pont-à-Celles, Luttre, Buzet, Obaix et Thiméon (6230). Intervention urgente débouchage, réparation fuite et chauffage."
+  locationName="Pont-à-Celles"
+>
   <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
     <div class="container text-center">
       <span class="badge">Intervention Rapide et Garanti</span>
       <h1 class="text-white mt-4">Votre Plombier Chauffagiste à Pont-à-Celles</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">Interventions expertes sur le 6230 (Pont-à-Celles, Buzet, Luttre, Obaix, Thiméon, Viesville). Débouchage avec hydrocurage, réparation de fuites, et installation sanitaire.</p>
       <div class="mt-8 flex gap-4 justify-center">
-        <a href="tel:0479123456" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Pont-à-Celles</a>
+        <a href="tel:0465137598" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Pont-à-Celles</a>
       </div>
     </div>
   </section>
@@ -25,7 +29,7 @@ import Layout from '../../layouts/Layout.astro';
         <div class="grid mt-4 mb-8" style="grid-template-columns: 1fr 1fr; gap: 20px;">
           <div class="card p-4">
             <h4 class="text-primary">Pont-à-Celles Centre & Luttre</h4>
-            <p class="text-sm mt-2 text-muted">Dépannage ultra-rapide pour pannes de chauffage (chaudières Vaillant, Bulex) et fuites d'eau sanitaires sous évier.</p>
+            <p class="text-sm mt-2 text-muted">Dépannage ultra-rapide pour pannes de chauffage (chaudières Vaillant, Bulex) et <a href="/services/depannage-urgence" style="color: var(--primary); text-decoration: underline;">fuites d'eau</a> sanitaires sous évier.</p>
           </div>
           <div class="card p-4">
             <h4 class="text-primary">Viesville & Thiméon</h4>
@@ -33,11 +37,11 @@ import Layout from '../../layouts/Layout.astro';
           </div>
           <div class="card p-4">
             <h4 class="text-primary">Obaix & Buzet</h4>
-            <p class="text-sm mt-2 text-muted">Installation d'adoucisseurs d'eau pour protéger vos installations de l'entartrage important dans la région.</p>
+            <p class="text-sm mt-2 text-muted">Installation d'<a href="/services/traitement-eau" style="color: var(--primary); text-decoration: underline;">adoucisseurs d'eau</a> pour protéger vos installations de l'entartrage important dans la région.</p>
           </div>
           <div class="card p-4">
             <h4 class="text-primary">Liberchies</h4>
-            <p class="text-sm mt-2 text-muted">Recherche de fuites non destructive (acoustique et gaz traceur) pour limiter les dégâts dans les habitations.</p>
+            <p class="text-sm mt-2 text-muted"><a href="/services/detection-fuites" style="color: var(--primary); text-decoration: underline;">Recherche de fuite</a>s non destructive (acoustique et gaz traceur) pour limiter les dégâts dans les habitations.</p>
           </div>
         </div>
 
@@ -61,8 +65,8 @@ import Layout from '../../layouts/Layout.astro';
           <h3 class="text-primary">Contact Local</h3>
           <ul class="sidebar-list mt-4">
             <li>📍 Couverture: 6230</li>
-            <li>⏱️ Délai: ~25-35 min</li>
-            <li>📞 Urgence: 0479 12 34 56</li>
+            <li>⏱️ Délai: Intervention rapide</li>
+            <li>📞 Urgence: 0465 13 75 98</li>
           </ul>
           <a href="/contact" class="btn btn-primary mt-4" style="width: 100%; text-align: center;">Demander un devis</a>
         </div>
@@ -70,6 +74,26 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <!-- Location Injection -->
+  <section class="section bg-light" style="background: #f8f9fa; padding: 40px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      
+      <div class="card p-6 border-accent" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">🏆 Cas d'étude : Intervention récente à Pont-A-Celles</h3>
+        <p class="text-muted"><strong>Mission :</strong> Recherche et réparation d'une fuite sous évier indétectable à l'œil nu à Pont-à-Celles.</p>
+        <p class="text-muted mt-2">Notre technicien est arrivé avec tout le matériel nécessaire pour sécuriser les lieux et effectuer la réparation le jour même, évitant ainsi un dégât des eaux majeur.</p>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h3 class="text-secondary mb-4">📍 Vous n'êtes pas à Pont-A-Celles ?</h3>
+        <p class="text-muted mb-4">Nous couvrons l'ensemble de la région de Charleroi et du Hainaut.</p>
+        <a href="/locations" class="btn btn-secondary" style="border: 1px solid var(--primary); color: var(--primary);">Voir toutes nos zones d'intervention</a>
+      </div>
+
+    </div>
+  </section>
+
 </Layout>
 
 <style>

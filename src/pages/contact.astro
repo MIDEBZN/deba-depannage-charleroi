@@ -2,7 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Contact | Dépannage Plombier Charleroi">
+<Layout 
+  title="Contact Plombier Charleroi 24/7 | Devis & Urgence"
+  description="Contactez Dépannage Plombier Charleroi au 0465 13 75 98 pour une urgence 24/7 ou demandez un devis gratuit pour vos travaux de plomberie."
+>
   <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
     <div class="container">
       <h1 class="text-white">Contactez-nous</h1>
@@ -38,6 +41,10 @@ import Layout from '../layouts/Layout.astro';
             <label>Message</label>
             <textarea rows="4" placeholder="Décrivez votre problème..."></textarea>
           </div>
+          <div class="form-group" style="font-size: 0.85rem; color: #666; margin-bottom: 20px; display: flex; align-items: flex-start; gap: 10px; text-align: left;">
+            <input type="checkbox" id="contact-consent" name="consent" required style="margin-top: 4px; width: auto;">
+            <label for="contact-consent" style="cursor: pointer; line-height: 1.4; display: inline; font-weight: normal; color: #666; margin-bottom: 0;">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande. <a href="/politique-confidentialite" style="text-decoration: underline;">En savoir plus sur la confidentialité</a>.</label>
+          </div>
           <button type="submit" class="btn btn-primary w-full" style="width: 100%;">Envoyer la demande</button>
         </form>
       </div>
@@ -49,11 +56,11 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="card mb-6">
           <h3 class="text-secondary">📞 Téléphone</h3>
-          <p class="mt-2 text-muted">Urgences 24/7: <strong class="text-primary">0479 12 34 56</strong></p>
+          <p class="mt-2 text-muted">Urgences 24/7: <strong class="text-primary"><a href="tel:0465137598" style="color: inherit; text-decoration: none;">0465 13 75 98</a></strong></p>
         </div>
         <div class="card mb-6">
           <h3 class="text-secondary">✉️ Email</h3>
-          <p class="mt-2 text-muted">contact@depannageplombiercharleroi.be</p>
+          <p class="mt-2 text-muted"><a href="mailto:contact@depannageplombiercharleroi.be" style="color: inherit; text-decoration: none;">contact@depannageplombiercharleroi.be</a></p>
         </div>
         <div class="card bg-accent mt-8">
           <h3 class="text-primary">Service d'Urgence 24/7</h3>

@@ -1,16 +1,67 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Détection de Fuites non destructive Charleroi | Dépannage Plombier">
+<Layout 
+  title="Recherche de Fuite Charleroi | Détection Non Destructive"
+  description="Recherche de fuite à Charleroi par thermographie et acoustique selon la situation. Diagnostic ciblé et rapport pour votre assurance."
+  serviceName="Détection de Fuite d'Eau"
+>
   <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
     <div class="container text-center">
       <span class="badge">Technologie Non Destructive</span>
+      <div style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;"><a href="/" style="color: white; text-decoration: underline;">Accueil</a> > <a href="/services" style="color: white; text-decoration: underline;">Services</a> > Detection Fuites</div>
       <h1 class="text-white mt-4">Recherche et Détection de Fuites d'Eau</h1>
       <p class="text-accent mt-4 max-w-2xl mx-auto">Une facture d'eau anormale ? De l'humidité sur vos murs ? Nous localisons l'origine exacte de la fuite avec des technologies de pointe, sans devoir casser vos murs ou vos sols.</p>
       <div class="mt-8 flex gap-4 justify-center">
-        <a href="tel:0479123456" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Fuite</a>
+        <a href="tel:0465137598" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Fuite</a>
         <a href="/contact" class="btn btn-accent" style="background: var(--accent); color: var(--secondary); font-weight: bold; padding: 14px 28px; border-radius: 50px;">Demander un devis</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- GEO Answer Block & Structured Data -->
+  <section class="section bg-light border-y">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="answer-block card p-6" style="background: white; border-top: 4px solid var(--primary);">
+        <h3>Ce qu'il faut savoir</h3>
+        <p><strong>Quoi ?</strong> Recherche de fuite d'eau sans casser vos murs ou sols.</p>
+        <p><strong>Comment ?</strong> Utilisation de thermographie infrarouge, gaz traceur ou écoute acoustique.</p>
+        <p><strong>Pour qui ?</strong> Propriétaires, locataires, ou syndics faisant face à une perte de pression ou des taches d'humidité.</p>
+        <p><strong>Délivrable ?</strong> Un rapport d'intervention détaillé, souvent demandé par les assurances.</p>
+      </div>
+      <div class="facts-table">
+        <h3 class="text-secondary mb-4">Fiche Service</h3>
+        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: var(--box-shadow); border-radius: var(--border-radius); overflow: hidden;">
+          <tbody style="font-size: 0.95rem;">
+            <tr><td>Service</td><td>Recherche de Fuite Non Destructive</td></tr>
+           <tr><td>Technologies</td><td>Thermographie, Gaz traceur, Ultrasons (Acoustique)</td></tr>
+           <tr><td>Applications</td><td>Chauffage sol, conduites encastrées, toitures plates</td></tr>
+           <tr><td>Délivrable</td><td>Rapport d'intervention (aide au dossier d'assurance)</td></tr>
+          </tbody>
+        </table>
+        <style>
+          .facts-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+          .facts-table tr:last-child td { border-bottom: none; }
+          .facts-table tr td:first-child { font-weight: bold; color: var(--secondary); background: var(--bg-light); width: 35%; }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Case Study -->
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1.5fr 1fr; gap: 40px;">
+      <div class="pricing-block">
+        <h2 class="text-secondary">Méthode de Tarification</h2>
+        <p>La recherche de fuite fait l'objet d'un forfait d'investigation :</p><ul><li><strong>Forfait diagnostic :</strong> Couvre le déplacement et l'utilisation des appareils de détection (caméra thermique, gaz).</li><li><strong>Rapport :</strong> Inclus dans le forfait.</li><li><strong>Réparation :</strong> Si la fuite est accessible, une réparation immédiate peut être chiffrée séparément.</li></ul>
+      </div>
+      <div class="case-study card p-6 bg-light" style="border-left: 4px solid var(--accent);">
+        <h3 class="text-primary mt-6">Intervention Récente : Fuite chauffage sol à Gerpinnes</h3>
+        <p><strong>Problème :</strong> Perte de pression constante sur la chaudière sans trace d'eau visible.</p>
+        <p><strong>Solution :</strong> Localisation de la micro-fuite sous le carrelage par thermographie infrarouge.</p>
+        <p><strong>Durée du diagnostic :</strong> 1h15.</p>
       </div>
     </div>
   </section>
@@ -97,6 +148,36 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
   </section>
+
+  <!-- Internal Linking Injection -->
+  <section class="section bg-light" style="background: #f8f9fa; padding: 40px 0;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">🔁 Nos autres services</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="/services/depannage-urgence" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Dépannage Urgence</a><a href="/services/debouchage" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Débouchage</a><a href="/services/chauffage-chaudieres" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Chauffage & Chaudières</a><a href="/services/installations-sanitaires" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Installations Sanitaires</a><a href="/services/traitement-eau" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary); margin: 5px;">Traitement Eau</a>
+        </div>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">📚 Guides Recommandés</h3>
+        <ul class="text-muted" style="list-style-type: none; padding-left: 0;">
+          <li class="mb-2">🔹 <a href="/blog/bruit-tuyaux-plomberie-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Bruit Tuyaux Plomberie Charleroi</a></li><li class="mb-2">🔹 <a href="/blog/comprendre-facture-eau-swde-charleroi" style="color: var(--primary); text-decoration: underline;">Guide : Comprendre Facture Eau Swde Charleroi</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <div class="container text-center mt-8">
+      <div class="card p-4" style="background: var(--primary); color: white; border-radius: 8px;">
+        <h3 class="text-white mb-2" style="font-size: 1.2rem;">📍 Besoin de ce service près de chez vous ?</h3>
+        <p class="mb-4">Nous couvrons tout le Hainaut.</p>
+        <a href="/locations" class="btn" style="background: white; color: var(--primary);">Consulter nos zones d'intervention</a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
 
 <style>

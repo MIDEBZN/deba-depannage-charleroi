@@ -2,7 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Zones d'Intervention | Dépannage Plombier Charleroi">
+<Layout 
+  title="Plombier Grand Charleroi | Zones d'Intervention 24/7"
+  description="Découvrez nos zones d'intervention plomberie dans le Grand Charleroi : Châtelet, Courcelles, Gerpinnes et toute la région."
+>
   <section class="section bg-secondary text-white text-center" style="background: var(--secondary); padding: 100px 0;">
     <div class="container">
       <h1 class="text-white">Nos Zones d'Intervention</h1>
@@ -82,6 +85,21 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <section class="section bg-light" style="background: #f0f7ff; padding: 60px 0; margin-top: 40px;">
+    <div class="container text-center">
+      <h2 class="text-secondary mb-8">Nos Services d'Intervention</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        <a href="/services/depannage-urgence" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Dépannage Urgence</a>
+        <a href="/services/debouchage" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Débouchage</a>
+        <a href="/services/chauffage-chaudieres" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Chauffage & Chaudière</a>
+        <a href="/services/detection-fuites" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Détection Fuite</a>
+        <a href="/services/installations-sanitaires" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Sanitaire</a>
+        <a href="/services/traitement-eau" class="btn" style="background: white; color: var(--primary); border: 1px solid var(--primary);">Traitement Eau</a>
+      </div>
+    </div>
+  </section>
+
 </Layout>
 
 <style>

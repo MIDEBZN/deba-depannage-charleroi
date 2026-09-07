@@ -10,49 +10,50 @@ import unblockingImg from '../assets/images/service_unblocking.png';
 import heatingImg from '../assets/images/service_heating.png';
 ---
 
-<Layout title="Plombier Charleroi | Urgence & Dépannage 24/7">
+<Layout 
+  title="Plombier Charleroi 24/7 | Urgence, Débouchage, Chauffage"
+  description="Plombier à Charleroi pour urgence, fuite, débouchage, chauffage et sanitaire. Service 24/7. Appelez Deba Dépannage ou demandez un devis."
+>
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-bg-shape"></div>
     <div class="container hero-container grid">
       <div class="hero-content">
         <span class="badge">Service 24/7 à Charleroi</span>
-        <h1>Ne laissez pas une fuite gâcher votre journée, <span class="text-primary">appelez-nous</span></h1>
+        <h1>Plombier à Charleroi : Dépannage Urgence 24/7 & Chauffage</h1>
+        <p class="mb-4" style="font-size: 1.25rem; font-weight: bold;">Ne laissez pas une fuite gâcher votre journée, <span class="text-primary">appelez-nous</span></p>
         <p>Expert local en plomberie, débouchage et chauffage. Intervention rapide, travail de qualité et tarifs transparents. Vos problèmes de tuyauterie résolus en un clin d'œil.</p>
-        <div class="hero-actions flex gap-4 items-center mt-8">
-          <a href="tel:0479123456" class="btn btn-primary">Appelez-nous</a>
+        <div class="hero-actions flex flex-wrap gap-4 items-center mt-8">
+          <a href="tel:0465137598" class="btn btn-primary">Appelez-nous</a>
           <a href="/contact" class="btn btn-secondary">Demander un Devis</a>
         </div>
       </div>
       <div class="hero-image">
         <div class="image-wrapper">
-          <Image src={heroImg} alt="Plombier professionnel à Charleroi" loading="eager" />
-          <div class="stats-float card">
-            <div class="flex items-center gap-4">
-              <div class="stats-icon text-primary text-2xl">👨‍🔧</div>
-              <div>
-                <h4 class="text-primary text-xl">3000+</h4>
-                <p class="text-sm">Clients Satisfaits</p>
-              </div>
-            </div>
-          </div>
+          <Image src={heroImg} alt="Plombier intervenant en urgence sur une fuite d\'eau à Charleroi" loading="eager" fetchpriority="high" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          <!-- Fake stats removed -->
         </div>
+
+      </div>
+      <div class="mt-12 text-center">
+        <a href="/about" class="btn btn-secondary" style="background: transparent; border: 2px solid var(--primary); color: var(--primary);">Découvrez notre expertise et nos agréments</a>
       </div>
     </div>
   </section>
+
 
   <!-- Features Section -->
   <section class="section features">
     <div class="container">
       <div class="text-center mb-12">
         <span class="text-primary font-bold tracking-wider uppercase text-sm">Pourquoi nous choisir</span>
-        <h2>Notre Expertise</h2>
+        <h2>Nos Services de Plomberie à Charleroi</h2>
       </div>
       <div class="grid feature-grid">
         <div class="card feature-card">
           <div class="icon-wrapper">🚀</div>
-          <h3>Service Rapide</h3>
-          <p>Intervention dans l'heure pour toutes vos urgences sur la région de Charleroi.</p>
+          <h3>Service Réactif</h3>
+          <p>Intervention rapide pour toutes vos urgences sur la région de Charleroi.</p>
         </div>
         <div class="card feature-card">
           <div class="icon-wrapper">🚨</div>
@@ -61,8 +62,8 @@ import heatingImg from '../assets/images/service_heating.png';
         </div>
         <div class="card feature-card">
           <div class="icon-wrapper">💯</div>
-          <h3>Professionnels Agréés</h3>
-          <p>Une équipe de plombiers et chauffagistes certifiés pour un travail dans les normes.</p>
+          <h3>Équipe Qualifiée</h3>
+          <p>Une équipe de plombiers et chauffagistes expérimentés pour un travail soigné.</p>
         </div>
         <div class="card feature-card">
           <div class="icon-wrapper">✅</div>
@@ -76,7 +77,7 @@ import heatingImg from '../assets/images/service_heating.png';
   <!-- Trust Badges (Brands & Certs) -->
   <section class="trust-brands bg-white" style="padding: 40px 0; border-bottom: 1px solid #eaeaea;">
     <div class="container text-center">
-      <p class="text-muted text-sm font-bold uppercase tracking-wider mb-6">Installateur Agréé & Marques Partenaires</p>
+      <p class="text-muted text-sm font-bold uppercase tracking-wider mb-6">Nous Travaillons Avec Les Meilleures Marques</p>
       <div class="flex flex-wrap justify-center items-center gap-8 opacity-70" style="opacity: 0.6;">
         <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">CERGA</span>
         <span class="font-bold text-xl text-secondary" style="font-size: 1.5rem; margin: 0 15px;">Vaillant</span>
@@ -94,33 +95,57 @@ import heatingImg from '../assets/images/service_heating.png';
       <div class="flex justify-between items-center mb-12">
         <div>
           <span class="text-primary font-bold uppercase text-sm">Nos Services</span>
-          <h2>Un service d'excellence</h2>
+          <h2>Intervention d'Urgence et Dépannage</h2>
         </div>
         <a href="/services" class="btn btn-secondary">Voir tous les services</a>
       </div>
       <div class="grid service-grid">
         <div class="service-card">
-          <Image src={plumbingImg} alt="Réparation Plomberie" />
+          <Image src={plumbingImg} alt="Réparation de fuite d\'eau sous évier à Charleroi" loading="lazy" />
           <div class="service-content">
             <h3>Dépannage Plomberie</h3>
             <p>Réparation de fuites, remplacement de robinetterie et installation sanitaire complète.</p>
-            <a href="/services" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
+            <a href="/services/depannage-urgence" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
           </div>
         </div>
         <div class="service-card">
-          <Image src={unblockingImg} alt="Débouchage" />
+          <Image src={unblockingImg} alt="Caméra d\'inspection de canalisation utilisée pour un débouchage" loading="lazy" />
           <div class="service-content">
             <h3>Débouchage Canalisation</h3>
             <p>Curage haute pression pour vos éviers, toilettes et égouts bouchés.</p>
-            <a href="/services" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
+            <a href="/services/debouchage" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
           </div>
         </div>
         <div class="service-card">
-          <Image src={heatingImg} alt="Chauffage" />
+          <Image src={heatingImg} alt="Chaudière gaz contrôlée par un technicien agréé à Charleroi" loading="lazy" />
           <div class="service-content">
             <h3>Entretien Chauffage</h3>
             <p>Entretien et réparation de chaudières toutes marques pour votre confort.</p>
-            <a href="/services" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
+            <a href="/services/chauffage-chaudieres" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <Image src={plumbingImg} alt="Détection de fuite non destructive par thermographie" loading="lazy" />
+          <div class="service-content">
+            <h3>Recherche de Fuite</h3>
+            <p>Détection non destructive par thermographie et acoustique.</p>
+            <a href="/services/detection-fuites" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <Image src={unblockingImg} alt="Installation sanitaire et rénovation de salle de bain" loading="lazy" />
+          <div class="service-content">
+            <h3>Installation Sanitaire</h3>
+            <p>Rénovation de salle de bain, installation de WC et pose de robinetterie.</p>
+            <a href="/services/installations-sanitaires" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <Image src={heatingImg} alt="Installation d\'adoucisseur d\'eau pour traiter le calcaire" loading="lazy" />
+          <div class="service-content">
+            <h3>Traitement de l'Eau</h3>
+            <p>Installation d'adoucisseurs d'eau pour protéger vos installations du calcaire.</p>
+            <a href="/services/traitement-eau" class="text-primary font-bold mt-4 inline-block">En savoir plus →</a>
           </div>
         </div>
       </div>
@@ -135,21 +160,21 @@ import heatingImg from '../assets/images/service_heating.png';
       <div class="grid team-grid">
         <div class="team-member">
           <div class="team-img-wrapper">
-            <Image src={teamImg} alt="Membre équipe" />
+            <Image src={teamImg} alt="" loading="lazy" />
           </div>
           <h4 class="mt-4">Thomas D.</h4>
           <p>Plombier Expert</p>
         </div>
         <div class="team-member">
           <div class="team-img-wrapper">
-            <Image src={teamMarcImg} alt="Membre équipe Marc L." />
+            <Image src={teamMarcImg} alt="" loading="lazy" />
           </div>
           <h4 class="mt-4">Marc L.</h4>
           <p>Chauffagiste Agréé</p>
         </div>
         <div class="team-member">
           <div class="team-img-wrapper">
-            <Image src={teamJulienImg} alt="Membre équipe Julien S." />
+            <Image src={teamJulienImg} alt="" loading="lazy" />
           </div>
           <h4 class="mt-4">Julien S.</h4>
           <p>Spécialiste Débouchage</p>
@@ -158,68 +183,58 @@ import heatingImg from '../assets/images/service_heating.png';
     </div>
   </section>
 
-  <!-- Stats Counter & Response Time -->
+  <!-- Highlights (Replaced fake stats) -->
   <section class="section stats bg-primary text-light">
     <div class="container grid stats-grid text-center">
       <div>
-        <h2 class="text-white text-5xl">30m</h2>
-        <p class="text-accent mt-2">Temps de Réponse</p>
+        <div class="text-white text-3xl" style="font-weight: bold;">24h/24 7j/7</div>
+        <p class="text-accent mt-2">Disponibilité</p>
       </div>
       <div>
-        <h2 class="text-white text-5xl">11k+</h2>
-        <p class="text-accent mt-2">Interventions</p>
+        <div class="text-white text-3xl" style="font-weight: bold;">Devis Clair</div>
+        <p class="text-accent mt-2">Prix Transparents</p>
       </div>
       <div>
-        <h2 class="text-white text-5xl">15+</h2>
-        <p class="text-accent mt-2">Années d'Expérience</p>
+        <div class="text-white text-3xl" style="font-weight: bold;">Grand Charleroi</div>
+        <p class="text-accent mt-2">Intervention Rapide</p>
       </div>
       <div>
-        <h2 class="text-white text-5xl">100%</h2>
-        <p class="text-accent mt-2">Clients Satisfaits</p>
+        <div class="text-white text-3xl" style="font-weight: bold;">Pro</div>
+        <p class="text-accent mt-2">Équipe Qualifiée</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials & Review Badges -->
+  <!-- Testimonials Placeholder (Removed fake testimonials) -->
   <section class="section testimonials bg-light">
     <div class="container text-center">
-      <span class="text-primary font-bold uppercase text-sm">Témoignages & Avis</span>
-      <h2>Ce que disent nos clients</h2>
-      
-      <div class="review-badges flex justify-center items-center gap-6 mt-6 mb-12 flex-wrap">
-        <div class="badge-box bg-white p-4 rounded shadow-sm flex items-center gap-3" style="background: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
-          <div class="text-3xl font-bold" style="color: #4285F4; font-size: 2rem;">G</div>
-          <div class="text-left" style="text-align: left;">
-            <div class="stars text-primary text-sm" style="font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-            <div class="font-bold text-secondary" style="font-weight: bold;">4.9/5 Avis Google</div>
-          </div>
-        </div>
-        <div class="badge-box bg-white p-4 rounded shadow-sm flex items-center gap-3" style="background: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
-          <div class="text-3xl text-green-500 font-bold" style="color: #00b67a; font-size: 2rem;">★</div>
-          <div class="text-left" style="text-align: left;">
-            <div class="stars text-primary text-sm" style="font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-            <div class="font-bold text-secondary" style="font-weight: bold;">Excellent Trustpilot</div>
-          </div>
-        </div>
+      <span class="text-primary font-bold uppercase text-sm">Avis</span>
+      <h2>Découvrez ce que nos clients disent de nous</h2>
+      <div class="mt-8">
+        <a href="https://g.page/r/YOUR_GOOGLE_LINK/review" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Voir nos avis Google</a>
       </div>
-      <div class="grid testimonial-grid">
-        <div class="card testimonial-card">
-          <div class="stars text-primary mb-4">⭐⭐⭐⭐⭐</div>
-          <p class="italic mb-6">"Une équipe réactive et professionnelle. Ils sont intervenus un dimanche soir pour une fuite importante dans notre salle de bain. Travail impeccable et prix correct."</p>
-          <h4>Sophie M.</h4>
-          <span class="text-sm">Charleroi Centre</span>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Answer Engine Optimized) -->
+  <section class="section faq bg-white" style="border-top: 1px solid #eaeaea;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="text-primary font-bold uppercase text-sm">Questions Fréquentes</span>
+        <h2>Tout Savoir Sur Nos Interventions</h2>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div class="card p-6" style="padding: 2rem;">
+          <h3 class="text-xl font-bold mb-3" style="font-size: 1.25rem;">Quel est le délai d'intervention pour une urgence plomberie à Charleroi ?</h3>
+          <p>Nous intervenons très rapidement, 24h/24 et 7j/7 dans tout le Grand Charleroi. Notre équipe mobile est toujours prête à se déplacer pour limiter les dégâts d'eau au plus vite.</p>
         </div>
-        <div class="card testimonial-card">
-          <div class="stars text-primary mb-4">⭐⭐⭐⭐⭐</div>
-          <p class="italic mb-6">"Mon égout était bouché depuis des jours. Ils ont utilisé une caméra pour trouver le problème et ont tout nettoyé rapidement. Très satisfait."</p>
-          <h4>Luc V.</h4>
-          <span class="text-sm">Gosselies</span>
+        <div class="card p-6" style="padding: 2rem;">
+          <h3 class="text-xl font-bold mb-3" style="font-size: 1.25rem;">Quels sont les tarifs d'un plombier en urgence ?</h3>
+          <p>Nos tarifs sont 100% transparents et annoncés avant le début de toute intervention. Le prix varie selon la nature du dépannage, mais nous garantissons une tarification honnête, sans frais cachés, même la nuit et le week-end.</p>
         </div>
-        <div class="card testimonial-card">
-          <div class="stars text-primary mb-4">⭐⭐⭐⭐⭐</div>
-          <p class="italic mb-6">"Entretien de ma chaudière Bulex fait avec sérieux. Le technicien a pris le temps d'expliquer ce qu'il faisait. Je recommande Dépannage Plombier Charleroi sans hésiter."</p>
-          <h4>Antoine R.</h4>
-          <span class="text-sm">Jumet</span>
+        <div class="card p-6" style="padding: 2rem;">
+          <h3 class="text-xl font-bold mb-3" style="font-size: 1.25rem;">Faites-vous le débouchage de canalisations et d'égouts ?</h3>
+          <p>Absolument. Nous sommes équipés de matériel de curage haute pression et de caméras d'inspection pour résoudre définitivement les problèmes d'égouts, toilettes, éviers ou baignoires bouchés.</p>
         </div>
       </div>
     </div>
@@ -230,8 +245,8 @@ import heatingImg from '../assets/images/service_heating.png';
     <div class="container">
       <div class="text-center mb-12">
         <span class="text-primary font-bold uppercase text-sm">Proximité & Intervention</span>
-        <h2>Notre Zone de Couverture</h2>
-        <p class="text-muted mt-4 max-w-2xl mx-auto" style="max-width: 800px; margin: 1rem auto 0;">Nous intervenons rapidement sur tout le Grand Charleroi et sa périphérie. Grâce à notre position stratégique, nos techniciens sont sur place en moyenne en 30 minutes lors d'une urgence.</p>
+        <h2>Plombier Actif sur le Grand Charleroi</h2>
+        <p class="text-muted mt-4 max-w-2xl mx-auto" style="max-width: 800px; margin: 1rem auto 0;">Nous intervenons rapidement sur tout le Grand Charleroi et sa périphérie. Grâce à notre position stratégique, nos techniciens sont sur place dans les meilleurs délais lors d'une urgence.</p>
       </div>
       <div class="map-container" style="border-radius: var(--border-radius); overflow: hidden; height: 400px; box-shadow: var(--box-shadow); border: 2px solid var(--accent);">
         <iframe 
@@ -246,6 +261,27 @@ import heatingImg from '../assets/images/service_heating.png';
       </div>
     </div>
   </section>
+
+  <!-- Zones & Guides -->
+  <section class="section bg-light" style="background: #f8f9fa;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">📍 Nos Zones d'Intervention</h3>
+        <p class="text-muted mb-4">Nous intervenons rapidement à Charleroi et dans toutes les communes environnantes du Hainaut pour vos urgences plomberie et chauffage.</p>
+        <a href="/locations" class="text-primary font-bold">Voir toutes nos zones d'intervention →</a>
+      </div>
+      
+      <div class="card p-6" style="background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 class="text-secondary mb-4">📚 Guides Pratiques</h3>
+        <ul class="text-muted" style="list-style-type: none; padding-left: 0;">
+          <li class="mb-2">🔹 <a href="/blog/panne-chauffe-eau-urgence-charleroi" style="color: var(--primary); text-decoration: underline;">Que faire lors d'une panne de chauffe-eau ?</a></li>
+          <li class="mb-2">🔹 <a href="/blog/debouchage-urgent-charleroi" style="color: var(--primary); text-decoration: underline;">Comment réaliser un débouchage urgent ?</a></li>
+          <li class="mb-2">🔹 <a href="/blog/entretien-chaudiere-gaz-charleroi-loi" style="color: var(--primary); text-decoration: underline;">L'entretien de la chaudière gaz en Wallonie</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 </Layout>
 
 <style>

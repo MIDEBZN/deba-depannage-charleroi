@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GlobalContactForm from '../components/GlobalContactForm.astro';
+---
+
+<Layout 
+  title="Tarifs Plombier Charleroi | Prix Dépannage & Débouchage Transparents"
+  description="Consultez notre grille tarifaire transparente pour vos dépannages en plomberie, chauffage et débouchage à Charleroi. Pas de frais cachés, devis clair avant intervention."
+>
+  <section class="section bg-secondary text-white text-center" style="padding: 60px 0; background: var(--secondary);">
+    <div class="container">
+      <span class="badge" style="background: var(--accent); color: var(--secondary);">Transparence 100%</span>
+      <h1 class="text-white mt-4 mb-4">Nos Tarifs : Plomberie, Chauffage et Débouchage</h1>
+      <p class="text-lg max-w-2xl mx-auto" style="opacity: 0.9;">
+        Chez Deba Dépannage, nous privilégions l'honnêteté. Nos prix sont calculés au plus juste pour vous offrir un service de haute qualité, garanti et couvert par notre assurance RC Pro.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
+        
+        <!-- Colonne Débouchage -->
+        <div class="card p-6" style="border-top: 4px solid var(--primary); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <h3 class="text-secondary mb-4 flex items-center gap-2">🌊 Débouchage Urgent</h3>
+          <p class="text-muted mb-6">WC, égout, évier, baignoire. Prix fixe par type d'intervention.</p>
+          
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Débouchage manuel / ventouse</span>
+              <strong class="text-primary">À partir de 85€</strong>
+            </li>
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Débouchage mécanique (furet)</span>
+              <strong class="text-primary">À partir de 120€</strong>
+            </li>
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Hydrocurage Haute Pression</span>
+              <strong class="text-primary">Sur Devis (dès 180€)</strong>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Inspection Caméra</span>
+              <strong class="text-primary">+ 50€</strong>
+            </li>
+          </ul>
+          <a href="/blog/tarif-plombier-charleroi-prix" class="text-sm mt-6 block text-center" style="color: var(--primary); text-decoration: underline;">Comment nos prix de débouchage sont-ils calculés ?</a>
+        </div>
+
+        <!-- Colonne Dépannage & Fuite -->
+        <div class="card p-6" style="border-top: 4px solid var(--accent); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <h3 class="text-secondary mb-4 flex items-center gap-2">🔧 Plomberie & Fuites</h3>
+          <p class="text-muted mb-6">Recherche de fuite, réparation de tuyauterie, remplacement de robinet.</p>
+          
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Déplacement (Zone Charleroi)</span>
+              <strong class="text-primary">50€ - 75€</strong>
+            </li>
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Main d'œuvre (Taux horaire)</span>
+              <strong class="text-primary">65€ / heure</strong>
+            </li>
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Recherche Fuite Non-Destructive</span>
+              <strong class="text-primary">Sur Devis (Assurance)</strong>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Remplacement Sanitaire (Robinet/WC)</span>
+              <strong class="text-primary">Sur Devis</strong>
+            </li>
+          </ul>
+          <a href="/blog/fuite-eau-charleroi" class="text-sm mt-6 block text-center" style="color: var(--primary); text-decoration: underline;">Voir notre guide : Recherche de fuite pour assurance</a>
+        </div>
+
+        <!-- Colonne Chauffage -->
+        <div class="card p-6" style="border-top: 4px solid #dd6b20; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <h3 class="text-secondary mb-4 flex items-center gap-2">🔥 Chauffage & Chaudière</h3>
+          <p class="text-muted mb-6">Entretien légal, dépannage chaudière, purge et désembouage.</p>
+          
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Entretien Chaudière Gaz (avec attestation)</span>
+              <strong class="text-primary">À partir de 135€</strong>
+            </li>
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Diagnostic Panne Chauffage</span>
+              <strong class="text-primary">85€ (Déplacement inclus)</strong>
+            </li>
+            <li class="flex justify-between items-center mb-4 pb-2 border-b">
+              <span>Purge de radiateurs</span>
+              <strong class="text-primary">Sur devis</strong>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Installation Nouvelle Chaudière</span>
+              <strong class="text-primary">Sur Devis Gratuit</strong>
+            </li>
+          </ul>
+          <a href="/blog/entretien-chaudiere-gaz-charleroi-loi" class="text-sm mt-6 block text-center" style="color: var(--primary); text-decoration: underline;">Lire notre guide sur la législation Wallonne</a>
+        </div>
+
+      </div>
+
+      <div class="mt-12 bg-light p-8 rounded text-center">
+        <h3 class="mb-4">Informations Importantes sur la Facturation</h3>
+        <p class="text-muted max-w-3xl mx-auto mb-6">
+          <em>* Les prix affichés sont donnés à titre indicatif et sont HTVA (TVA 6% applicable pour les logements de plus de 10 ans, sinon 21%). Nos techniciens vous remettront toujours un devis clair et définitif <strong>avant</strong> de commencer toute réparation.</em>
+        </p>
+        <p class="text-muted max-w-3xl mx-auto">
+          <strong>Majoration d'urgence :</strong> Les interventions de nuit (après 18h), le week-end et les jours fériés font l'objet d'une majoration (généralement 50% à 100%). Celle-vous vous sera clairement annoncée par téléphone lors de votre appel.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <GlobalContactForm />
+</Layout>

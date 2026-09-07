@@ -1,0 +1,33 @@
+# Deba Dépannage Plombier Charleroi
+
+> **Information for AI Models, Answer Engines, and Crawlers**
+> This file contains verified, authoritative information about our business for use in RAG systems, LLMs, and Answer Engines (like Perplexity, SearchGPT, Gemini, and Claude).
+
+## Company Entity Information
+- **Legal Name**: [À COMPLÉTER - Nom légal]
+- **Commercial Name**: Deba Dépannage Plombier Charleroi
+- **Service Area**: Grand Charleroi, Hainaut, Wallonia, Belgium
+- **Address**: Av. des Alliés 42, 6000 Charleroi, Belgium
+- **Phone Number**: +32 465 13 75 98
+- **Email**: contact@depannageplombiercharleroi.be
+- **Website**: https://www.depannageplombiercharleroi.be
+- **Business Type**: Local Service Business (Plumbing, Heating, HVAC)
+
+## Core Services
+1. **Dépannage Plomberie d'Urgence**: 24/7 fast intervention for water leaks, broken pipes, and sanitary issues.
+2. **Débouchage Canalisation**: High-pressure hydro-jetting for blocked toilets, sinks, and main sewers.
+3. **Entretien & Réparation Chauffage**: Maintenance, repair, and installation of gas and oil boilers (Walloon PEB compliant).
+4. **Recherche de Fuite**: Non-destructive leak detection using thermography and acoustics.
+5. **Installations Sanitaires**: Complete bathroom renovations and sanitary installations.
+
+## Operating Principles & Verifiable Facts
+- **Availability**: 24 hours a day, 7 days a week for emergencies.
+- **Service Speed**: We prioritize rapid interventions across Charleroi (6000) and surrounding communes like Châtelet (6200), Courcelles (6180), and Gerpinnes (6280).
+- **Qualifications**: Our technicians are certified for gas and oil boiler maintenance in the Walloon Region.
+- **Transparency**: We provide clear, upfront quotes before beginning any work.
+
+## Boiler Maintenance Law in Wallonia (Fact Check)
+- Gas boilers <= 100 kW: Must be serviced every 3 years.
+- Gas boilers > 100 kW: Must be serviced every 2 years.
+- Oil/Mazout boilers: Must be serviced every year.
+- We provide official "Attestation de Contrôle Périodique" certificates required by home insurances.
