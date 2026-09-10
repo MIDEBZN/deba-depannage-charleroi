@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Plombier Gilly (6060) | Urgence, Débouchage & Chauffage"
+  description="Votre plombier à Gilly (6060) pour tout dépannage rapide : chaudière, fuite d'eau, débouchage WC. Intervention aux Quatre Bras, Sart-Culpart et environs."
+  serviceName="Plombier Gilly"
+>
+  <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
+    <div class="container text-center">
+      <span class="badge">Service Local 6060</span>
+      <h1 class="text-white mt-4">Plombier Chauffagiste à Gilly</h1>
+      <p class="text-accent mt-4 max-w-2xl mx-auto">Un problème sanitaire près des Quatre Bras ou une fuite vers Sart-Culpart ? Notre équipe de Gilly (6060) intervient dans les plus brefs délais pour sécuriser vos installations et réparer vos pannes.</p>
+      <div class="mt-8 flex gap-4 justify-center">
+        <a href="tel:0465137598" class="btn btn-primary" style="font-size: 1.1rem;">📞 Contacter un plombier</a>
+        <a href="/contact" class="btn btn-accent" style="background: var(--accent); color: var(--secondary); font-weight: bold; padding: 14px 28px; border-radius: 50px;">Devis en ligne</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light border-y">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="answer-block card p-6" style="background: white; border-top: 4px solid var(--primary);">
+        <h3>Une intervention sur mesure à Gilly</h3>
+        <p>Gilly est une zone densément peuplée avec une forte concentration d'habitations et de commerces le long de la chaussée. Nous connaissons bien le secteur, ce qui garantit une arrivée rapide.</p>
+        <p><strong>Nos spécialités locales :</strong></p>
+        <ul>
+          <li><strong>Dépannage Chauffage :</strong> Relance de chaudières en sécurité, remplacement de thermostats et entretien réglementaire.</li>
+          <li><strong>Débouchage express :</strong> Pour les appartements et maisons de ville souvent sujets aux bouchons récurrents.</li>
+          <li><strong>Sanitaire :</strong> Remplacement de chauffe-eau, réparation de robinets et installation de nouvelles douches.</li>
+        </ul>
+      </div>
+      <div class="facts-table">
+        <h3 class="text-secondary mb-4">Fiche Locale</h3>
+        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: var(--box-shadow); border-radius: var(--border-radius); overflow: hidden;">
+          <tbody style="font-size: 0.95rem;">
+           <tr><td>Zone d'intervention</td><td>Gilly (6060)</td></tr>
+           <tr><td>Lieux d'intervention</td><td>Quatre Bras, Sart-Culpart, Les Haies, Louvroy</td></tr>
+           <tr><td>Type de dépannage</td><td>Urgent & sur rendez-vous</td></tr>
+           <tr><td>Disponibilité</td><td>Service de garde pour les fuites majeures</td></tr>
+          </tbody>
+        </table>
+        <style>
+          .facts-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+          .facts-table tr:last-child td { border-bottom: none; }
+          .facts-table tr td:first-child { font-weight: bold; color: var(--secondary); background: var(--bg-light); width: 35%; }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <section class="section text-center">
+    <div class="container">
+      <h2 class="mb-8">Pourquoi faire appel à nous sur Gilly ?</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        <div class="card p-6">
+          <h3 class="text-primary mb-4">Réactivité</h3>
+          <p class="text-muted">Évitez les dégâts des eaux prolongés. Notre présence sur Charleroi et ses communes fusionnées nous permet d'être réactifs sur le secteur de Gilly.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="text-primary mb-4">Transparence</h3>
+          <p class="text-muted">Pas de mauvaises surprises. Nos prix sont annoncés avant intervention, qu'il s'agisse d'un simple changement de joint ou d'une recherche de fuite complexe.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="text-primary mb-4">Expertise Multi-marques</h3>
+          <p class="text-muted">Nous réparons et entretenons les principales marques de chaudières (Vaillant, Bulex, Junkers) et de sanitaires (Grohe, Geberit) présentes dans vos maisons.</p>
+        </div>
+      </div>
+      <div class="mt-8">
+         <a href="/locations" class="btn btn-secondary">Voir toutes nos zones d'intervention en Hainaut</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

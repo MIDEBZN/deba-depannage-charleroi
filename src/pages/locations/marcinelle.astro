@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Plombier Marcinelle (6001) | Dépannage & Installation Rapide"
+  description="Plombier chauffagiste à Marcinelle (6001). Intervention rapide pour urgence, fuite, débouchage et rénovation. Secteur Hublinbu, Les Haies et centre."
+  serviceName="Plombier Marcinelle"
+>
+  <section class="hero-service" style="background: var(--secondary); padding: 80px 0; color: white;">
+    <div class="container text-center">
+      <span class="badge">Intervention Locale 6001</span>
+      <h1 class="text-white mt-4">Votre Plombier à Marcinelle</h1>
+      <p class="text-accent mt-4 max-w-2xl mx-auto">Basés à proximité immédiate, nos techniciens interviennent rapidement à Marcinelle (6001) pour tous vos soucis de plomberie, du quartier des Haies jusqu'à Hublinbu, en passant par le centre.</p>
+      <div class="mt-8 flex gap-4 justify-center">
+        <a href="tel:0465137598" class="btn btn-primary" style="font-size: 1.1rem;">📞 Urgence Marcinelle</a>
+        <a href="/contact" class="btn btn-accent" style="background: var(--accent); color: var(--secondary); font-weight: bold; padding: 14px 28px; border-radius: 50px;">Devis Gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light border-y">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="answer-block card p-6" style="background: white; border-top: 4px solid var(--primary);">
+        <h3>Services de proximité à Marcinelle</h3>
+        <p>Le parc immobilier de Marcinelle est varié : anciennes maisons ouvrières, villas cossues vers Hublinbu, ou appartements plus récents. Nous adaptons nos techniques à l'âge de vos installations.</p>
+        <p><strong>Dépannage Urgent :</strong> Fuites d'eau sous évier, boiler percé, ou chaudière en panne en plein hiver.</p>
+        <p><strong>Débouchage :</strong> Canalisation obstruée, WC refoulant, intervention avec hydrocureur.</p>
+        <p><strong>Rénovation :</strong> Modernisation complète de salles de bain et adaptation de plomberie.</p>
+      </div>
+      <div class="facts-table">
+        <h3 class="text-secondary mb-4">Informations Pratiques</h3>
+        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: var(--box-shadow); border-radius: var(--border-radius); overflow: hidden;">
+          <tbody style="font-size: 0.95rem;">
+           <tr><td>Code postal</td><td>6001</td></tr>
+           <tr><td>Quartiers couverts</td><td>Centre, Les Haies, Hublinbu, Bruyère</td></tr>
+           <tr><td>Délais d'urgence</td><td>Intervention express souvent possible (proximité Charleroi centre)</td></tr>
+           <tr><td>Devis</td><td>Gratuit sur place pour les projets d'installation</td></tr>
+          </tbody>
+        </table>
+        <style>
+          .facts-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+          .facts-table tr:last-child td { border-bottom: none; }
+          .facts-table tr td:first-child { font-weight: bold; color: var(--secondary); background: var(--bg-light); width: 35%; }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <section class="section text-center">
+    <div class="container">
+      <h2 class="mb-8">Nos domaines d'expertise à Marcinelle</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        <div class="card p-6">
+          <h3 class="text-primary mb-4">Plomberie & Fuites</h3>
+          <p class="text-muted">Réparation de la tuyauterie vétuste, remplacement de vannes, et détection de fuites cachées sous les planchers typiques des maisons marcinelloises.</p>
+          <a href="/services/depannage-urgence" class="mt-4 inline-block font-bold" style="color: var(--primary);">Voir le service →</a>
+        </div>
+        <div class="card p-6">
+          <h3 class="text-primary mb-4">Débouchage Égouts</h3>
+          <p class="text-muted">Curage haute pression pour désobstruer les égouts et canalisations extérieures souvent victimes de racines ou d'affaissements.</p>
+          <a href="/services/debouchage" class="mt-4 inline-block font-bold" style="color: var(--primary);">Voir le service →</a>
+        </div>
+        <div class="card p-6">
+          <h3 class="text-primary mb-4">Chauffage (Gaz/Mazout)</h3>
+          <p class="text-muted">Entretien obligatoire et réparation de chaudières, purge de radiateurs et optimisation de votre système de chauffage avant l'hiver.</p>
+          <a href="/services/chauffage-chaudieres" class="mt-4 inline-block font-bold" style="color: var(--primary);">Voir le service →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

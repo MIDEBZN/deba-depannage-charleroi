@@ -160,6 +160,21 @@ const businessSchema = {
                 }
               }
             ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Rénovation de Salle de Bain",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Rénovation Salle de Bain Clé en Main",
+                  "description": "Rénovation complète de salle de bain à Charleroi. Plomberie, carrelage, douche italienne.",
+                  "url": `${siteUrl}/services/renovation-salle-de-bain/`
+                }
+              }
+            ]
           }
         ]
       }
@@ -199,6 +214,7 @@ pathSegments.forEach((segment, index) => {
   if (segment === 'chauffage-chaudieres') name = 'Chauffage & Chaudières';
   if (segment === 'detection-fuites') name = 'Détection de Fuites';
   if (segment === 'installations-sanitaires') name = 'Installations Sanitaires';
+  if (segment === 'renovation-salle-de-bain') name = 'Rénovation Salle de Bain';
   if (segment === 'traitement-eau') name = 'Traitement de l\'Eau';
   if (segment === 'about') name = 'À Propos';
   if (segment === 'contact') name = 'Contact';
@@ -239,6 +255,23 @@ const articleSchema = isBlogPost ? {
     "@id": currentUrl
   }
 } : null;
+
+// Service Schema for Service Pages
+const isServicePage = Astro.url.pathname.includes('/services/') && Astro.url.pathname !== '/services/';
+const serviceSchema = isServicePage ? {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": serviceName || title,
+  "description": description,
+  "provider": {
+    "@id": `${siteUrl}/#organization`
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Charleroi" },
+    { "@type": "City", "name": "Hainaut" }
+  ],
+  "url": currentUrl
+} : null;
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(businessSchema)}></script>
@@ -247,4 +280,7 @@ const articleSchema = isBlogPost ? {
 )}
 {isBlogPost && articleSchema && (
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+)}
+{isServicePage && serviceSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)}></script>
 )}
