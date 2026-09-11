@@ -3,6 +3,11 @@ User-agent: *
 Allow: /
 Allow: /_astro/
 Allow: /images/
+Allow: /about/
+Allow: /blog/
+Allow: /contact/
+Allow: /locations/
+Allow: /services/
 Allow: /*.css$
 Allow: /*.js$
 
