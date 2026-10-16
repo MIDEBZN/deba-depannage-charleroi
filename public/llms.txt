@@ -1,33 +1,54 @@
 # Deba Dépannage Plombier Charleroi
 
-> **Information for AI Models, Answer Engines, and Crawlers**
-> This file contains verified, authoritative information about our business for use in RAG systems, LLMs, and Answer Engines (like Perplexity, SearchGPT, Gemini, and Claude).
+> Service professionnel de dépannage plomberie d'urgence 24h/7j, débouchage de canalisation, entretien de chaudière et rénovation sanitaire à Charleroi et dans tout le Hainaut (Belgique).
 
-## Company Entity Information
-- **Legal Name**: [À COMPLÉTER - Nom légal]
-- **Commercial Name**: Deba Dépannage Plombier Charleroi
-- **Service Area**: Grand Charleroi, Hainaut, Wallonia, Belgium
-- **Address**: Av. des Alliés 42, 6000 Charleroi, Belgium
-- **Phone Number**: +32 465 13 75 98
-- **Email**: contact@depannageplombiercharleroi.be
-- **Website**: https://www.depannageplombiercharleroi.be
-- **Business Type**: Local Service Business (Plumbing, Heating, HVAC)
+Entreprise locale certifiée et agréée pour la Région Wallonne (Gaz et Mazout). Dépannage rapide 24h/24 et 7j/7 avec devis transparent avant intervention. Contact d'urgence téléphonique : +32 465 13 75 98.
 
-## Core Services
-1. **Dépannage Plomberie d'Urgence**: 24/7 fast intervention for water leaks, broken pipes, and sanitary issues.
-2. **Débouchage Canalisation**: High-pressure hydro-jetting for blocked toilets, sinks, and main sewers.
-3. **Entretien & Réparation Chauffage**: Maintenance, repair, and installation of gas and oil boilers (Walloon PEB compliant).
-4. **Recherche de Fuite**: Non-destructive leak detection using thermography and acoustics.
-5. **Installations Sanitaires**: Complete bathroom renovations and sanitary installations.
+## Pages Principales
 
-## Operating Principles & Verifiable Facts
-- **Availability**: 24 hours a day, 7 days a week for emergencies.
-- **Service Speed**: We prioritize rapid interventions across Charleroi (6000) and surrounding communes like Châtelet (6200), Courcelles (6180), and Gerpinnes (6280).
-- **Qualifications**: Our technicians are certified for gas and oil boiler maintenance in the Walloon Region.
-- **Transparency**: We provide clear, upfront quotes before beginning any work.
+- [Accueil](https://www.depannageplombiercharleroi.be/): Présentation de l'entreprise, coordonnées d'urgence et aperçu des services de plomberie.
+- [Services de Plomberie et Chauffage](https://www.depannageplombiercharleroi.be/services/): Catalogue complet de nos prestations en urgence et sur rendez-vous.
+- [Tarifs & Devis](https://www.depannageplombiercharleroi.be/tarifs/): Grille tarifaire transparente sans surprise pour tous dépannages et entretiens.
+- [Zones d'Intervention](https://www.depannageplombiercharleroi.be/locations/): Couverture géographique dans le Grand Charleroi et les communes avoisinantes.
+- [À Propos](https://www.depannageplombiercharleroi.be/about/): Historique, certifications wallonnes, garanties et valeurs de l'entreprise.
+- [Contact & Urgence](https://www.depannageplombiercharleroi.be/contact/): Numéro direct (+32 465 13 75 98) et formulaire de contact pour intervention rapide.
 
-## Boiler Maintenance Law in Wallonia (Fact Check)
-- Gas boilers <= 100 kW: Must be serviced every 3 years.
-- Gas boilers > 100 kW: Must be serviced every 2 years.
-- Oil/Mazout boilers: Must be serviced every year.
-- We provide official "Attestation de Contrôle Périodique" certificates required by home insurances.
+## Services de Dépannage & Plomberie
+
+- [Dépannage Plomberie d'Urgence](https://www.depannageplombiercharleroi.be/services/depannage-urgence/): Intervention express 24/7 pour fuites d'eau majeures, tuyaux percés et coupures d'eau.
+- [Débouchage de Canalisation](https://www.depannageplombiercharleroi.be/services/debouchage/): Débouchage express de WC, éviers, douches et égouts par hydrocurage haute pression.
+- [Entretien & Dépannage Chaudière](https://www.depannageplombiercharleroi.be/services/chauffage-chaudieres/): Entretien périodique légal (attestation PEB Wallonie), réparation de brûleur et radiateurs gaz et mazout.
+- [Recherche et Détection de Fuite](https://www.depannageplombiercharleroi.be/services/detection-fuites/): Détection non destructive par thermographie infrarouge et écoute acoustique avec rapport d'assurance.
+- [Installations Sanitaires](https://www.depannageplombiercharleroi.be/services/installations-sanitaires/): Pose et remplacement de chauffe-eau, robinetterie, tuyauterie cuivre/multicouche et sanitaires.
+- [Rénovation de Salle de Bain](https://www.depannageplombiercharleroi.be/services/renovation-salle-de-bain/): Modernisation clé en main, pose de douches italiennes et baignoires.
+- [Traitement de l'Eau & Adoucisseurs](https://www.depannageplombiercharleroi.be/services/traitement-eau/): Installation et entretien d'adoucisseurs d'eau pour protéger les canalisations du calcaire.
+
+## Zones Couvertes (Grand Charleroi)
+
+- [Plombier Marcinelle](https://www.depannageplombiercharleroi.be/locations/marcinelle/): Dépannage plomberie et débouchage à Marcinelle (6001).
+- [Plombier Gilly](https://www.depannageplombiercharleroi.be/locations/gilly/): Réparation urgente de fuite et chauffe-eau à Gilly (6060).
+- [Plombier Châtelet](https://www.depannageplombiercharleroi.be/locations/chatelet/): Intervention rapide plomberie et chauffage à Châtelet (6200).
+- [Plombier Courcelles](https://www.depannageplombiercharleroi.be/locations/courcelles/): Plombier chauffagiste certifié à Courcelles (6180).
+- [Plombier Gerpinnes](https://www.depannageplombiercharleroi.be/locations/gerpinnes/): Entretien chaudière et plomberie à Gerpinnes (6280).
+- [Plombier Montigny-le-Tilleul](https://www.depannageplombiercharleroi.be/locations/montigny-le-tilleul/): Débouchage et plomberie sanitaire à Montigny-le-Tilleul (6110).
+- [Plombier Fleurus](https://www.depannageplombiercharleroi.be/locations/fleurus/): Dépannage d'urgence plomberie à Fleurus (6220).
+- [Plombier Fontaine-l'Évêque](https://www.depannageplombiercharleroi.be/locations/fontaine-l-eveque/): Plombier de garde à Fontaine-l'Évêque (6140).
+- [Plombier Ham-sur-Heure-Nalinnes](https://www.depannageplombiercharleroi.be/locations/ham-sur-heure-nalinnes/): Dépannage fuite et chauffage à Ham-sur-Heure-Nalinnes (6120).
+- [Plombier Les Bons Villers](https://www.depannageplombiercharleroi.be/locations/les-bons-villers/): Artisan plombier à Les Bons Villers (6210).
+- [Plombier Pont-à-Celles](https://www.depannageplombiercharleroi.be/locations/pont-a-celles/): Réparation canalisation et sanitaires à Pont-à-Celles (6230).
+
+## Guides Pratiques & Blog
+
+- [Recherche de fuite d'eau à Charleroi : Prix et prise en charge](https://www.depannageplombiercharleroi.be/blog/recherche-fuite-eau-charleroi-prix/): Guide complet des prix et démarches d'assurance habitation.
+- [Prix débouchage canalisation à Charleroi](https://www.depannageplombiercharleroi.be/blog/prix-debouchage-canalisation-charleroi/): Tarifs indicatifs et solutions pour déboucher WC et tuyauteries.
+- [Comment réparer une fuite d'eau en attendant le plombier](https://www.depannageplombiercharleroi.be/blog/reparer-fuite-attendant-plombier-charleroi/): Gestes simples pour couper l'eau et limiter les dégâts d'inondation.
+- [Entretien annuel de plomberie et chaudière en Wallonie](https://www.depannageplombiercharleroi.be/blog/entretien-annuel-plomberie-charleroi/): Réglementation wallonne PEB et périodicités obligatoires.
+- [Dépannage chauffage et radiateurs froids](https://www.depannageplombiercharleroi.be/blog/depannage-chauffage-radiateurs-froids-charleroi/): Purge, circulateur et causes fréquentes d'un radiateur froid.
+- [Comment éviter le calcaire sur vos installations de plomberie](https://www.depannageplombiercharleroi.be/blog/eviter-calcaire-plomberie-charleroi/): Conseils anti-calcaire pour prolonger la durée de vie des appareils ménagers.
+- [Que faire en cas de tuyaux gelés en hiver](https://www.depannageplombiercharleroi.be/blog/tuyaux-geles-charleroi/): Méthode sûre de dégel sans provoquer de fuite ou d'éclatement.
+- [Réduire sa consommation d'eau](https://www.depannageplombiercharleroi.be/blog/reduire-consommation-eau-plomberie-charleroi/): Équipements hydro-économes et astuces d'économie d'eau.
+
+## Optional
+
+- [Mentions Légales](https://www.depannageplombiercharleroi.be/mentions-legales/): Informations légales sur l'éditeur du site.
+- [Politique de Confidentialité](https://www.depannageplombiercharleroi.be/politique-confidentialite/): Protection des données personnelles (RGPD).
